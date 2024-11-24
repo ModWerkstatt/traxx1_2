@@ -2,562 +2,792 @@ function data()
 return {
 	en = {
 
-				["mod_name"] = "Traxx 1",
-		["mod_desc"] = "V 60 of the Deutsche Bundesbahn, later as series 260 and 261, as well as series 360 and 361 as well as 364 and 365, known as small locomotives. After being equipped with new engines, also as series 362 and 363.\nAll of these series designations belong to the shunting locomotives that were manufactured by from the 1950s to the present day. Many private railway companies still use the locomotives today.\n\nAll locomotives are also included as assets.",
+		["mod_name"] = "Siemens Vectron MS and AC",
+		["mod_desc"] = "The Vectron is a modern three-phase locomotive for international passenger and freight transport in Europe. The Vectron can operate in 20 European countries. The Vectron was first presented to the public in 2010, and since then the locomotive has been in use on many state and private railways. The package contains the locomotives class 193 MS (multi-system), class 193 AC (alternating current) and the Smartron.",
 
-        ["v60_menu"] = "V 60 | Class 260/261 | Class 360 - 365",
-        ["v60_fake_menu"] = "V 60 family FAKE",
-        ["v60_rk900_menu"] = "V 60 family with RK900",
-        ["v60_rk900_fake_menu"] = "V 60 family with RK900 FAKE",
+        ["br193_ms_menu"] = "Vectron class 193 MS",
+        ["br193_ac_menu"] = "Vectron class 193 AC",
+        ["br193_fake_ms_menu"] = "Vectron class 193 MS FAKES",
+        ["br193_fake_ac_menu"] = "Vectron class 193 AC FAKES",
+		["br193_desc"] = "The Vectron is a modern three-phase locomotive for international passenger and freight transport in Europe. In 2014 the Vectron MS was presented for the first time with a speed of 200 km/h (also available with 160 km/h) and a continuous output of 6400 kW.",
 
-        ["v60_vorserie"] = "V 60 Pre-series",
-        ["v60_vorserie_desc"] = "...",
+		["br192_menu"] = "Smartron class 192",
+		["br192_fake_menu"] = "Smartron class 192",
+		["br192_desc"] = "The Smartron is a slimmed down version of the Vectron. The Smartron is only available in blue metallic, the power is 5600 kW and is only approved for 140 km/h, the locomotive only runs in one country at a time. Smartron has the train protection systems PZB/LZB and ETCS for Germany.",
 
-        -- V60
-        ["v60_leicht_ar_name"] = "V 60 light (1956)",
-        ["v60_schwer_ar_name"] = "V 60 heavy (1956)",
-        ["v60_desc"] = "The V 60 was developed in order to have enough locomotives available for shunting services. The locomotives were delivered from 1956 in two versions, a lighter and a heavier one. Both variants had the same engine installed, so the performance data were identical. There was also no difference in the locomotive numbers.",
+		["br193_ms"] = 	"Vectron as a multi-system locomotive with 4 pantographs",
+		["br193_ac"] = 	"Vectron as a multi-system locomotive with 2 pantographs",
+		["br193_zza"] = "Vectron as an AC locomotive with 2 pantographs and a train destination indicator",
+		["br192"] = 	"Smartron as AC locomotive with 2 pantographs",
 
-        ["v60_leicht_ar_rotated_name"] = "V 60 light [rotated] (1956)",
-        ["v60_schwer_ar_rotated_name"] = "V 60 heavy [rotated] (1956)",
+		["Ms_br193"] = "Activate Vectron class 193 multi-system?",
+		["option_ms_br193_desc"] = "Should the Vectron class 193 be activated for the multi-system (pantos down, no light, no driver)?",
+		["Ac_br193"] = "Activate Vectron class 193 AC system?",
+		["option_ac_br193_desc"] = "Should the Vectron class 193 be activated for the AC system (pantos down, no light, no driver)?",
+		["dc_br193"] = "Activate Vectron class 193 DC system?",
+		["option_dc_br193_desc"] = "Should the Vectron class 193 be activated for the DC system (Pantos down, no light, no driver)?",
+		["Sm_br193"] = "Activate Smartron class 192?",
+		["option_sm_br193_desc"] = "Should the Smartron class 192 Pantos bottom, no light, no driver) be activated?",
+		["dachinl_br193"] = "Activate Vectron class 193 with DACHINL equipment?",
+		["option_dachinal_br193_desc"] = "Should the Vectron class 193 be activated with DACHINL equipment (pantos down, no lights, no driver)?",
+		["osteuropa_br193"] = "Activate Vectron class 193 with Eastern Europe equipment?",
+		["option_osteuropa_br193_desc"] = "Should the Vectron class 193 be activated with Eastern European equipment (pantos down, no lights, no driver)?",
+		["skandinavien_br193"] = "Activate Smartron Vectron class 193 with Scandinavia equipment?",
+		["option_skandinavien_br193_desc"] = "Should the Vectron class 193 be activated with Scandinavian equipment (pantos down, no lights, no driver)?",
 
-	-- x60 (light)
-        ["260_ar_name"] = "Class 260 purple (1968)",
-        ["260_ob_name"] = "Class 260 ocean blue/creme (1974)",
-        ["360_ob_name"] = "Class 360 ocean blue/creme (1987)",
-        ["360_or_name"] = "Class 360 orient red (1987)",
-        ["360_or_dbag_name"] = "Class 360 orient red DBAG (1994)",
-        ["760_gas_name"] = "Class 760 CNG [ex Class 360] (1999)",
-        ["760_erdgas_desc"] = "As part of a general inspection in 1999, 360 877 was equipped with a natural gas engine and stationed at the Munich Vehicle and Technology Centre as 760 877 from 29.2.2000. The locomotive was used for shunting passenger coaches in Munich main station, where a dedicated natural gas filling station was also built for it in the depot. After the test operation was completed, the locomotive was decommissioned in 2002 and taken out of service on 1st October 2004.",
-        ["360_gleiskraft_name"] = "Class 360 Gleiskraft (2003)",
-        ["360_boegl_name"] = "Class 360 Max Bögl (2010)",
-        ["360_brohltal_name"] = "Class 360 Brohltalbahn (2007)",
-        ["260_desc"] = "With the introduction of computer numbers, the lightweight version of the V 60 became the 260 series. This meant that for the first time you could tell from the number which version it was. The intended purpose remained unchanged.",
-        ["360_desc"] = "From 1987 onwards, the locomotive series was downgraded to \"small locomotives\". This classification saved personnel costs because the Deutsche Bundesbahn no longer had to use \"locomotive drivers\", but rather \"small locomotive operators\", whose training was cheaper. Therefore, the class 260 became the class 360. By the end of the year 2002, all class 360s were either converted to radio remote control (=> class 364) or parked.",
+		["br193_ms_siemens_name"] = 	"Class 193 901 MS Siemens",
+		["br193_ms_siemens2_name"] = 	"Class 6193 400 MS Siemens (Vectron 230 km/h)",
+		["br193_ms_siemens3_name"] = 	"Class 193 844 MS Siemens (Creating Corridors)",
 
-	    ["260_ar_rotated_name"] = "Class 260 purple [rotated] (1968)",
-        ["260_ob_rotated_name"] = "Class 260 ocean blue/creme [rotated] (1974)",
-        ["360_ob_rotated_name"] = "Class 360 ocean blue/creme [rotated] (1987)",
-        ["360_or_rotated_name"] = "Class 360 orient red [rotated] (1987)",
-        ["360_or_rotated_dbag_name"] = "Class 360 orient red DBAG [rotated] (1994)",
-        ["760_gas_rotated_name"] = "Class 760 CNG [ex Class 360] [rotated] (1999)",
-        ["360_gleiskraft_rotated_name"] = "Class 360 Gleiskraft [rotated] (2003)",
-        ["360_boegl_rotated_name"] = "Class 360 Max Bögl [rotated] (2010)",
-        ["360_brohltal_rotated_name"] = "Class 360 Brohltalbahn [rotated] (2007)",
+		["br193_ms_akiem_name"] = 		"Class 193 888 MS Akiem (w/o Italy)",
+		["br193_ms_akiem2_name"] = 		"Class 193 890 MS Akiem (Ecco Rail)",
 
-        -- x61 (heavy)
-        ["261_ar_name"] = "Class 261 purple (1968)",
-        ["261_ob_name"] = "Class 261 ocean blue/creme (1974)",
-        ["361_ob_name"] = "Class 361 ocean blue/creme (1987)",
-        ["361_or_name"] = "Class 361 orient red (1987)",
-        ["361_or_dbag_name"] = "Class 361 orient red DBAG (1994)",
-        ["361_keg_name"] = "Class 361 KEG 0651 (1998)",
-        ["261_desc"] = "With the introduction of computer numbers, the heavyweight version of the V 60 became the 261 series. This meant that for the first time you could tell from the number which version it was. The intended purpose remained unchanged.",
-        ["361_desc"] = "From 1987 onwards, the locomotive series was downgraded to \"small locomotives\". This classification saved personnel costs because the Federal Railways no longer had to use \"locomotive drivers\", but rather \"small locomotive operators\", whose training was cheaper. Therefore, the class 261 became the class 361. By the end of the year 2000, all class 361s were either converted to radio remote control (=> class 365) or parked.",
+		["br193_ms_alpha_name"] = 		"Class 193 403 MS Alpha Trains (w/ Italy)",
+		["br193_ms_alpha2_name"] = 		"Class 193 588 MS Alpha Trains (w/o Italy)",
+		["br193_ms_alpha3_name"] = 		"Class 193 586 MS Alpha Trains (CD Cargo)",
+		["br193_ms_alpha4_name"] = 		"Class 193 405 MS Alpha Trains (Green Cargo)",
+		["br193_ms_alpha5_name"] = 		"Class 193 587 MS Alpha Trains (CD Cargo)",
 
-	    ["261_ar_rotated_name"] = "Class 261 purple [rotated] (1968)",
-        ["261_ob_rotated_name"] = "Class 261 ocean blue/creme [rotated] (1974)",
-        ["361_ob_rotated_name"] = "Class 361 ocean blue/creme [rotated] (1987)",
-        ["361_or_rotated_name"] = "Class 361 orient red [rotated] (1987)",
-        ["361_or_rotated_dbag_name"] = "Class 361 orient red DBAG [rotated] (1994)",
-        ["361_keg_rotated_name"] = "Class 361 KEG 0651 [rotated] (1998)",
+		["br193_ms_bls_name"] = 		"Class 193 494 MS BLS Cargo (Alpinisten)",
+		["br193_ms_bls2_name"] = 		"Class 475 402 MS BLS Cargo (Alpinisten)",
+		["br193_ms_bls3_name"] = 		"Class 475 422 MS BLS Cargo (The New Alpinist",
+		["br193_ms_bls4_name"] = 		"Class 475 416 MS BLS Cargo (w/o foil)",
 
-        -- 362 (light+motor+radio)
-        ["362_vr_name"] = "Class 362 traffic red (1997)",
-        ["362_hsl_name"] = "Class 362 HSL (2014)",
-        ["362_bke_name"] = "Class 362 BKE (2019)",
-        ["362_nrs_name"] = "Class 362 NRS (2013)",
-        ["362_desc"] = "Since 1997, the Maybach engines have been replaced by Caterpillar twelve-cylinder engines during refurbishment, although this conversion is only carried out on locomotives with radio remote control. These locomotives are called class 362.",
+		["br193_ms_boxx_name"] = 		"Class 193 833 MS BoxXpress.de",
+		["br193_ms_boxx2_name"] = 		"Class 6193 117 MS BoxXpress.eu",
 
-	    ["362_vr_rotated_name"] = "Class 362 traffic red [rotated] (1997)",
-        ["362_hsl_rotated_name"] = "Class 362 HSL [rotated] (2014)",
-        ["362_bke_rotated_name"] = "Class 362 BKE [rotated] (2019)",
-        ["362_nrs_rotated_name"] = "Class 362 NRS [rotated] (2013)",
+		["br193_ms_captrain_name"] = 	"Class 193 892 MS Captrain (Jerome)",
 
-	    ["362_vr_rk900_name"] = "Class 362 traffic red [RK900 up] (1997)",
-        ["362_hsl_rk900_name"] = "Class 362 HSL [RK900 up] (2014)",
-        ["362_bke_rk900_name"] = "Class 362 BKE [RK900 up] (2019)",
-        ["362_nrs_rk900_name"] = "Class 362 NRS [RK900 up] (2013)",
+		["br193_ms_cu_name"] = 			"Class 370 052 MS Cargounit",
+		["br193_ms_cu2_name"] = 		"Class 370 051 MS Cargounit/CD Cargo",
 
-	    ["362_vr_rk900_down_name"] = "Class 362 traffic red [RK900 down] (1997)",
-        ["362_hsl_rk900_down_name"] = "Class 362 HSL [RK900 down] (2014)",
-        ["362_bke_rk900_down_name"] = "Class 362 BKE [RK900 down] (2019)",
-        ["362_nrs_rk900_down_name"] = "Class 362 NRS [RK900 down] (2013)",
+		["br193_ms_db_name"] = 			"Class 193 302 MS DB (w/ Italy)",
+		["br193_ms_db2_name"] = 		"Class 193 394 MS DB (Rail Bridge Ukraine)",
+		["br193_ms_db3_name"] = 		"Class 193 371 MS DB (w/o Italy)",
+		["br193_ms_db4_name"] = 		"Class 193 388 MS DB (#DBCargofährt)",
+		["br193_ms_db5_name"] = 		"Class 193 560 MS DB (Güter gehören auf die Schiene)",
+		["br193_ms_db6_name"] = 		"Class 193 360 MS DB (I am European)",
+		["br193_ms_db7_name"] = 		"Class 193 363 MS DB (I am a Climate Hero)",
+		["br193_ms_db8_name"] = 		"Class 193 312 MS DB (Das ist Grün Offenburg)",
+		["br193_ms_db9_name"] = 		"Class 193 357 MS DB (Das ist Grün Saarbrücken)",
+		["br193_ms_db10_name"] = 		"Class 193 361 MS DB (Das ist Grün Senftenberg)",
 
-	    ["362_vr_rotated_rk900_name"] = "Class 362 traffic red [rotated] [RK900 up] (1997)",
-        ["362_hsl_rotated_rk900_name"] = "Class 362 HSL [rotated] [RK900 up] (2014)",
-        ["362_bke_rotated_rk900_name"] = "Class 362 BKE [rotated] [RK900 up] (2019)",
-        ["362_nrs_rotated_rk900_name"] = "Class 362 NRS [rotated] [RK900 up] (2013)",
+		["br193_ms_hupac_name"] = 		"Class 193 492 MS Hupac",
+		["br193_ms_hupac2_name"] = 		"Class 193 493 MS Hupac/WRS",
 
-	    ["362_vr_rotated_rk900_down_name"] = "Class 362 traffic red [rotated] [RK900 down] (1997)",
-        ["362_hsl_rotated_rk900_down_name"] = "Class 362 HSL [rotated] [RK900 down] (2014)",
-        ["362_bke_rotated_rk900_down_name"] = "Class 362 BKE [rotated] [RK900 down] (2019)",
-        ["362_nrs_rotated_rk900_down_name"] = "Class 362 NRS [rotated] [RK900 down] (2013)",
+		["br193_ms_ell_name"] = 		"Class 193 214 MS ELL (w/ Italiy)",
+		["br193_ms_ell2_name"] = 		"Class 193 299 MS ELL (w/o Italy)",
+		["br193_ms_ell3_name"] = 		"Class 193 756 MS ELL (Vectron #750)",
+		["br193_ms_ell4_name"] = 		"Class 193 759 MS ELL (NS Netherlands)",
+		["br193_ms_ell5_name"] = 		"Class 193 692 MS ELL (Nightjet)",
+		["br193_ms_ell6_name"] = 		"Class 193 293 MS ELL (Ceske Drahy)",
+		["br193_ms_ell7_name"] = 		"Class 383 003 MS CD Cargo",
 
-        -- 363 (heavy+motor+radio)
-        ["363_vr_name"] = "Class 363 traffic red (1997)",
-        ["363_ice_name"] = "Class 363 IC livery (2018)",
-        ["363_hsl_name"] = "Class 363 HSL (2014)",
-        ["363_press_name"] = "Class 363 PRESS (2007)",
-        ["363_ra_name"] = "Class 363 RailAdventure (2020)",
-        ["363_rst_name"] = "Class 363 RST (2016)",
-        ["363_setg_name"] = "V 60.03 SETG [ex class 363] (2017)",
-        ["363_hslrot_name"] = "Class 363 HSL (2015)",
-        ["363_bke_name"] = "Class 363 BKE (2018)",
-        ["363_sbs_name"] = "Class 363 SBS (2014)",
-        ["363_mwb_name"] = "BR 363 MWB (2006)",
-        ["363_tlvg_name"] = "BR 363 TLVG [as 261 654-5] (2017)",
-        ["363_railion_name"] = "BR 363 Railion (2003)",
-        ["363_desc"] = "Since 1997, the Maybach engines have been replaced by Caterpillar twelve-cylinder engines during refurbishment, although this conversion is only carried out on locomotives with radio remote control. These locomotives are called class 363.",
+		["br193_ms_lomo_name"] = 		"Class 193 772 MS Lokomotion (stripe blue)",
+		["br193_ms_lomo2_name"] = 		"Class 193 777 MS Lokomotion (Beige)",
+		["br193_ms_lomo3_name"] = 		"Class 193 776 MS Lokomotion (stripe red)",
+		["br193_ms_lomo4_name"] = 		"Class 193 774 MS Lokomotion (20 Years)",
+		["br193_ms_lomo5_name"] = 		"Class 193 664 MS Lokomotion (MRCE)",
 
-	    ["363_vr_rotated_name"] = "Class 363 traffic red [rotated] (1997)",
-        ["363_ice_rotated_name"] = "Class 363 IC livery  [rotated](2018)",
-        ["363_hsl_rotated_name"] = "Class 363 HSL [rotated] (2014)",
-        ["363_press_rotated_name"] = "Class 363 PRESS  [rotated](2007)",
-        ["363_ra_rotated_name"] = "Class 363 RailAdventure [rotated] (2020)",
-        ["363_rst_rotated_name"] = "Class 363 RST [rotated] (2016)",
-        ["363_setg_rotated_name"] = "V 60.03 SETG [ex class 363] [rotated] (2017)",
-        ["363_hslrot_rotated_name"] = "Class 363 HSL [rotated] (2015)",
-        ["363_bke_rotated_name"] = "Class 363 BKE [rotated] (2018)",
-        ["363_sbs_rotated_name"] = "Class 363 SBS [rotated] (2014)",
-        ["363_mwb_rotated_name"] = "BR 363 MWB [rotated] (2006)",
-        ["363_tlvg_rotated_name"] = "BR 363 TLVG [as 261 654-5] [rotated] (2017)",
-        ["363_railion_rotated_name"] = "BR 363 Railion [rotated] (2003)",
+		["br193_ms_mrce_name"] = 		"Class 193 661 MS MRCE",
+		["br193_ms_mrce2_name"] = 		"Class 193 639 MS BEACON",
+		["br193_ms_mrce3_name"] = 		"Class 193 706 MS MRCE (Mercitalia)",
+		["br193_ms_mrce4_name"] = 		"Class 193 639 MS BEACON (Mercitalia)",
 
-        ["363_vr_rk900_name"] = "Class 363 traffic red  [RK900 up](1997)",
-        ["363_ice_rk900_name"] = "Class 363 IC livery [RK900 up] (2018)",
-        ["363_hsl_rk900_name"] = "Class 363 HSL [RK900 up] (2014)",
-        ["363_press_rk900_name"] = "Class 363 PRESS [RK900 up] (2007)",
-        ["363_ra_rk900_name"] = "Class 363 RailAdventure [RK900 up] (2020)",
-        ["363_rst_rk900_name"] = "Class 363 RST [RK900 up] (2016)",
-        ["363_setg_rk900_name"] = "V 60.03 SETG [ex class 363] [RK900 up] (2017)",
-        ["363_hslrot_rk900_name"] = "Class 363 HSL [RK900 up] (2015)",
-        ["363_bke_rk900_name"] = "Class 363 BKE [RK900 up] (2018)",
-        ["363_sbs_rk900_name"] = "Class 363 SBS [RK900 up] (2014)",
-        ["363_mwb_rk900_name"] = "BR 363 MWB [RK900 up] (2006)",
-        ["363_tlvg_rk900_name"] = "BR 363 TLVG [as 261 654-5] [RK900 up] (2017)",
-        ["363_railion_rk900_name"] = "BR 363 Railion [RK900 up] (2003)",
+		["br193_ms_obb_name"] = 		"Rh 1293 001 MS ÖBB",
 
-        ["363_vr_rk900_down_name"] = "Class 363 traffic red [RK900 down] (1997)",
-        ["363_ice_rk900_down_name"] = "Class 363 IC livery [RK900 down] (2018)",
-        ["363_hsl_rk900_down_name"] = "Class 363 HSL [RK900 down] (2014)",
-        ["363_press_rk900_down_name"] = "Class 363 PRESS [RK900 down] (2007)",
-        ["363_ra_rk900_down_name"] = "Class 363 RailAdventure [RK900 down] (2020)",
-        ["363_rst_rk900_down_name"] = "Class 363 RST [RK900 down] (2016)",
-        ["363_setg_rk900_down_name"] = "V 60.03 SETG [ex class 363] [RK900 down] (2017)",
-        ["363_hslrot_rk900_down_name"] = "Class 363 HSL [RK900 down] (2015)",
-        ["363_bke_rk900_down_name"] = "Class 363 BKE [RK900 down] (2018)",
-        ["363_sbs_rk900_down_name"] = "Class 363 SBS [RK900 down] (2014)",
-        ["363_mwb_rk900_down_name"] = "BR 363 MWB [RK900 down] (2006)",
-        ["363_tlvg_rk900_down_name"] = "BR 363 TLVG [as 261 654-5] [RK900 down] (2017)",
-        ["363_railion_rk900_down_name"] = "BR 363 Railion [RK900 down] (2003)",
+		["br193_ms_rpool_name"] = 		"Class 6193 093 MS Railpool (w/o Italy)",
+		["br193_ms_rpool2_name"] = 		"Class 6193 112 MS Railpool (w/ Italy)",
 
-        ["363_vr_rotated_rk900_name"] = "Class 363 traffic red [rotated] [RK900 up] (1997)",
-        ["363_ice_rotated_rk900_name"] = "Class 363 IC livery [rotated] [RK900 up] (2018)",
-        ["363_hsl_rotated_rk900_name"] = "Class 363 HSL [rotated] [RK900 up] (2014)",
-        ["363_press_rotated_rk900_name"] = "Class 363 PRESS [rotated] [RK900 up] (2007)",
-        ["363_ra_rotated_rk900_name"] = "Class 363 RailAdventure [rotated] [RK900 up] (2020)",
-        ["363_rst_rotated_rk900_name"] = "Class 363 RST [rotated] [RK900 up] (2016)",
-        ["363_setg_rotated_rk900_name"] = "V 60.03 SETG  [rotated][ex class 363] [RK900 up] (2017)",
-        ["363_hslrot_rotated_rk900_name"] = "Class 363 HSL [rotated] [RK900 up] (2015)",
-        ["363_bke_rotated_rk900_name"] = "Class 363 BKE [rotated] [RK900 up] (2018)",
-        ["363_sbs_rotated_rk900_name"] = "Class 363 SBS [rotated] [RK900 up] (2014)",
-        ["363_mwb_rotated_rk900_name"] = "BR 363 MWB [rotated] [RK900 up] (2006)",
-        ["363_tlvg_rotated_rk900_name"] = "BR 363 TLVG [as 261 654-5] [rotated] [RK900 up] (2017)",
-        ["363_railion_rotated_rk900_name"] = "BR 363 Railion [rotated] [RK900 up] (2003)",
+		["br193_ms_pkp_name"] = 		"Class 370 056 MS PKP Cargo (roof neon green)",
+		["br193_ms_pkp2_name"] = 		"Class 370 027 MS PKP Cargo (roof red)",
+		["br193_ms_pkp3_name"] = 		"Class 370 022 MS PKP Cargo (roof blue)",
+		["br193_ms_pkp4_name"] = 		"Class 383 053 MS PKP Cargo (Unitcredit) ",
 
-        ["363_vr_rotated_rk900_down_name"] = "Class 363 traffic red [rotated] [RK900 down] (1997)",
-        ["363_ice_rotated_rk900_down_name"] = "Class 363 IC livery [rotated] [RK900 down] (2018)",
-        ["363_hsl_rotated_rk900_down_name"] = "Class 363 HSL [rotated] [RK900 down] (2014)",
-        ["363_press_rotated_rk900_down_name"] = "Class 363 PRESS [rotated] [RK900 down] (2007)",
-        ["363_ra_rotated_rk900_down_name"] = "Class 363 RailAdventure [rotated] [RK900 down] (2020)",
-        ["363_rst_rotated_rk900_down_name"] = "Class 363 RST [rotated] [RK900 down] (2016)",
-        ["363_setg_rotated_rk900_down_name"] = "V 60.03 SETG [ex class 363] [rotated] [RK900 down] (2017)",
-        ["363_hslrot_rotated_rk900_down_name"] = "Class 363 HSL [rotated] [RK900 down] (2015)",
-        ["363_bke_rotated_rk900_down_name"] = "Class 363 BKE [rotated] [RK900 down] (2018)",
-        ["363_sbs_rotated_rk900_down_name"] = "Class 363 SBS [rotated] [RK900 down] (2014)",
-        ["363_mwb_rotated_rk900_down_name"] = "BR 363 MWB [rotated] [RK900 down] (2006)",
-        ["363_tlvg_rotated_rk900_down_name"] = "BR 363 TLVG [as 261 654-5] [rotated] [RK900 down] (2017)",
-        ["363_railion_rotated_rk900_down_name"] = "BR 363 Railion [rotated] [RK900 down] (2003)",
+		["br193_ms_setg_name"] = 		"Class 193 839 MS SETG (Alpenlok)",
+		["br193_ms_setg2_name"] = 		"Class 193 821 MS SETG (Daniel)",
+		["br193_ms_setg3_name"] = 		"Class 193 746 MS SETG (Jeder Mann)",
+		["br193_ms_setg4_name"] = 		"Class 193 691 MS SETG (Die Waffen nieder)",
+		["br193_ms_setg5_name"] = 		"Class 193 736 MS SETG (Marco Polo)",
+		["br193_ms_setg6_name"] = 		"Class 193 692 MS SETG (Wood Works)",
 
-        -- 364 (light+radio)
-        ["364_ob_name"] = "Class 364 ocean blue/creme (1987)",
-        ["364_or_name"] = "Class 364 orient red (1987)",
-        ["364_ob_dbag_name"] = "Class 364 ocean blue/creme DBAG (1994)",
-        ["364_or_dbag_name"] = "Class 364 orient red DBAG (1994)",
-        ["364_vr_name"] = "Class 364 traffic red DBAG (1996)",
-        ["364_desc"] = "From 1987 onwards, the first locomotives were equipped with a radio remote control, which meant that the respective series was \"increased\" by 4 places: The class 360 became the class 364.",
+		--- AC ---
 
-        ["364_ob_rotated_name"] = "Class 364 ocean blue/creme [rotated] (1987)",
-        ["364_or_rotated_name"] = "Class 364 orient red [rotated] (1987)",
-        ["364_ob_dbag_rotated_name"] = "Class 364 ocean blue/creme DBAG [rotated] (1994)",
-        ["364_or_dbag_rotated_name"] = "Class 364 orient red DBAG [rotated] (1994)",
-        ["364_vr_rotated_name"] = "Class 364 traffic red DBAG [rotated] (1996)",
+		["br193_ac_siemens_name"] = 	"Class 192 961 AC Siemens",
+		["br193_ac_siemens2_name"] = 	"Class 193 780 AC Siemens Vectron 230km/h",
 
-        ["364_ob_rk900_name"] = "Class 364 ocean blue/creme [RK900 up] (1987)",
-        ["364_or_rk900_name"] = "Class 364 orient red [RK900 up] (1987)",
-        ["364_ob_dbag_rk900_name"] = "Class 364 ocean blue/creme DBAG [RK900 up] (1994)",
-        ["364_or_dbag_rk900_name"] = "Class 364 orient red DBAG [RK900 up] (1994)",
-        ["364_vr_rk900_name"] = "Class 364 traffic red DBAG [RK900 up] (1996)",
+		["br193_ac_dsb_name"] = 		"EB 3202 AC DSB",
+		["br193_ac_dsb2_name"] = 		"EB 3240 AC DSB Vectron Nr. 1000",
 
-        ["364_ob_rk900_down_name"] = "Class 364 ocean blue/creme [RK900 down] (1987)",
-        ["364_or_rk900_down_name"] = "Class 364 orient red [RK900 down] (1987)",
-        ["364_ob_dbag_rk900_down_name"] = "Class 364 ocean blue/creme DBAG [RK900 down] (1994)",
-        ["364_or_dbag_rk900_down_name"] = "Class 364 orient red DBAG [RK900 down] (1994)",
-        ["364_vr_rk900_down_name"] = "Class 364 traffic red DBAG [RK900 down] (1996)",
+		["br193_ac_ell_name"] = 		"Class 193 208 AC ELL",
+		["br193_ac_ell2_name"] = 		"Class 193 208 AC ELL/Rurtalbahn Cargo",
+		["br193_ac_ell3_name"] = 		"Class 193 208 AC ELL/Eccorail",
+		["br193_ac_ell4_name"] = 		"Class 193 247 AC ELL (color white)",
 
-        ["364_ob_rotated_rk900_name"] = "Class 364 ocean blue/creme [rotated] [RK900 up] (1987)",
-        ["364_or_rotated_rk900_name"] = "Class 364 orient red [rotated] [RK900 up] (1987)",
-        ["364_ob_dbag_rotated_rk900_name"] = "Class 364 ocean blue/creme DBAG [rotated] [RK900 up] (1994)",
-        ["364_or_dbag_rotated_rk900_name"] = "Class 364 orient red DBAG [rotated] [RK900 up] (1994)",
-        ["364_vr_rotated__rk900name"] = "Class 364 traffic red DBAG [rotated] [RK900 up] (1996)",
+		["br193_ac_flix_name"] = 		"Class 243 002 AC Flixtrain/Hectorrail",
+		["br193_ac_flix2_name"] = 		"Class 193 813 AC Flixtrain",
+		["br193_ac_flix3_name"] = 		"Class 193 861 AC Flixtrain",
 
-        ["364_ob_rotated_rk900_down_name"] = "Class 364 ocean blue/creme [rotated] [RK900 down] (1987)",
-        ["364_or_rotated_rk900_down_name"] = "Class 364 orient red [rotated] [RK900 down] (1987)",
-        ["364_ob_dbag_rotated_rk900_down_name"] = "Class 364 ocean blue/creme DBAG [rotated] [RK900 down] (1994)",
-        ["364_or_dbag_rotated_rk900_down_name"] = "Class 364 orient red DBAG [rotated] [RK900 down] (1994)",
-        ["364_vr_rotated_rk900_down_name"] = "Class 364 traffic red DBAG [rotated] [RK900 down] (1996)",
+		["br193_ac_mrce_name"] = 		"Class 193 874 AC MRCE",
+		["br193_ac_mrce2_name"] = 		"Class 193 603 AC MRCE",
+		["br193_ac_mrce3_name"] = 		"Class 193 852 AC MRCE",
+		["br193_ac_mrce4_name"] = 		"Class 193 864 AC MRCE",
 
-        -- 365 (heavy+radio)
-        ["365_ob_name"] = "Class365 ocean blue/creme (1987)",
-        ["365_or_name"] = "Class 365 orient red (1987)",
-        ["365_ob_dbag_name"] = "Class 365 ocean blue/creme DBAG (1994)",
-        ["365_or_dbag_name"] = "Class 365 orient red DBAG (1997)",
-        ["365_vr_cargo_name"] = "Class 365 traffic red DB Cargo (2005)",
-        ["365_desc"] = "From 1987 onwards, the first locomotives were equipped with a radio remote control, which meant that the respective series was \"increased\" by 4 places: The class 361 became the class 365.",
+		["br193_ac_nrail_name"] = 		"Class 193 922 AC Northrail",
 
-        ["365_ob_rotated_name"] = "Class365 ocean blue/creme [rotated] (1987)",
-        ["365_or_rotated_name"] = "Class 365 orient red [rotated] (1987)",
-        ["365_ob_dbag_rotated_name"] = "Class 365 ocean blue/creme DBAG [rotated] (1994)",
-        ["365_or_dbag_rotated_name"] = "Class 365 orient red DBAG [rotated] (1997)",
-        ["365_vr_cargo_rotated_name"] = "Class 365 traffic red DB Cargo [rotated] (2005)",
+		["br193_ac_retrack_name"] = 	"Class 193 815 AC Retrack (Kätchen)",
+		["br193_ac_retrack2_name"] = 	"Class 193 811 AC Retrack (Jule)",
+		["br193_ac_retrack3_name"] = 	"Class 193 872 AC Retrack (Transpetrol)",
 
-        ["365_ob_rk900_name"] = "Class365 ocean blue/creme [RK900 up] (1987)",
-        ["365_or_rk900_name"] = "Class 365 orient red [RK900 up] (1987)",
-        ["365_ob_dbag_rk900_name"] = "Class 365 ocean blue/creme DBAG [RK900 up] (1994)",
-        ["365_or_dbag_rk900_name"] = "Class 365 orient red DBAG [RK900 up] (1997)",
-        ["365_vr_cargo_rk900_name"] = "Class 365 traffic red DB Cargo [RK900 up] (2005)",
+		["br193_ac_rpool_name"] = 		"Class 193 802 AC Railpool Regio Bayern",
+		["br193_ac_rpool2_name"] = 		"Class 193 994 AC Railpool",
+		["br193_ac_rpool3_name"] = 		"Class 193 813 AC Railpool",
+		["br193_ac_rpool4_name"] = 		"Class 193 813 AC Railpool (Knorrbremse)",
+		["br193_ac_rpool5_name"] = 		"Class 193 804 AC Railpool",
 
-        ["365_ob_rk900_down_name"] = "Class365 ocean blue/creme [RK900 down] (1987)",
-        ["365_or_rk900_down_name"] = "Class 365 orient red [RK900 down] (1987)",
-        ["365_ob_dbag_rk900_down_name"] = "Class 365 ocean blue/creme DBAG [RK900 down] (1994)",
-        ["365_or_dbag_rk900_down_name"] = "Class 365 orient red DBAG [RK900 down] (1997)",
-        ["365_vr_cargo_rk900_down_name"] = "Class 365 traffic red DB Cargo [RK900 down] (2005)",
+		["br193_ac_setg_name"] = 		"Class 193 218 AC SETG (Beethoven 15 years SETG)",
+		["br193_ac_setg2_name"] = 		"Class 193 218 AC SETG (Beethoven 20 years SETG)",
+		["br193_ac_setg3_name"] = 		"Class 193 218 AC SETG (Silent night, holy night)",
+		["br193_ac_setg4_name"] = 		"Class 193 812 AC SETG (white)",
+		["br193_ac_setg5_name"] = 		"Class 193 204 AC SETG (Mozart)",
+		["br193_ac_setg6_name"] = 		"Class 193 831 AC SETG (Christian Doppler)",
 
-        ["365_ob_rotated_rk900_name"] = "Class365 ocean blue/creme [rotated] [RK900 up] (1987)",
-        ["365_or_rotated_rk900_name"] = "Class 365 orient red [rotated] [RK900 up] (1987)",
-        ["365_ob_dbag_rotated_rk900_name"] = "Class 365 ocean blue/creme DBAG [rotated] [RK900 up] (1994)",
-        ["365_or_dbag_rotated_rk900_name"] = "Class 365 orient red DBAG [rotated] [RK900 up] (1997)",
-        ["365_vr_cargo_rotated_rk900_name"] = "Class 365 traffic red DB Cargo [rotated] [RK900 up] (2005)",
+		--- Smartron ---
 
-        ["365_ob_rotated_rk900_down_name"] = "Class365 ocean blue/creme [rotated] [RK900 down] (1987)",
-        ["365_or_rotated_rk900_down_name"] = "Class 365 orient red [rotated] [RK900 down] (1987)",
-        ["365_ob_dbag_rotated_rk900_down_name"] = "Class 365 ocean blue/creme DBAG [rotated] [RK900 down] (1994)",
-        ["365_or_dbag_rotated_rk900_down_name"] = "Class 365 orient red DBAG [rotated] [RK900 down] (1997)",
-        ["365_vr_cargo_rotated_rk900_down_name"] = "Class 365 traffic red DB Cargo [rotated] [RK900 down] (2005)",
+		["br192_sm_siemens_name"] = 	"Class 192 001 Siemens",
 
-        -- post
-        ["v60_post_ar_name"] = "V 60 Post Lok 3 (1956)",
-        ["v60_post_ob_name"] = "V 60 Post Lok 4 (1976)",
+		["br192_sm_bbl_name"] = 		"Class 192 008 BBL Logistik",
 
-        ["v60_post_ar_rotated_name"] = "V 60 Post Lok 3 [rotated] (1956)",
-        ["v60_post_ob_rotated_name"] = "V 60 Post Lok 4 [rotated] (1976)",
+		["br192_sm_evb_name"] = 		"Class 192 005 EVB",
+		["br192_sm_evb2_name"] = 		"Class 192 076 EVB (Black Forest Terminal)",
 
-        -- assets
-        ["V 60 Asset Set"] = "V 60 asset Set",
-        ["V 60 gedreht Asset Set"] = "V 60 rotated asset Set",
-        ["V 60 mit RK900 unten Asset Set"] = "V 60 with RK900 down asset set",
-        ["V 60 mit RK900 oben Asset Set" ] = "V 60 with RK900 up asset set",
-        ["Statische V 60, BR 260, 261, 360, 361, 362, 363, 364, 365"] = "Static V 60, class 260, 261, 360, 361, 362, 363, 364, 365",
-        ["Statische V60 mit RK900."] = "Static V 60 with shunting coupler RK900.",
-        ["V 60 mit RK 900 als Asset"] = "V 60 with RK 900 as asset",
-        ["V 60 als Asset"] = "V 60 as asset",
-        ["V 60 gedreht als Asset"] = "V 60 rotated as asset",
-        ["V 60"] = "V 60",
+		["br192_sm_nrail_name"] = 		"Class 192 017 Northrail",
+		["br192_sm_nrail2_name"] = 		"Class 192 015 Northrail/RTB Cargo",
 
-        -- fake
-        ["Fake_v60"] = "Activate fake versions?",
-        ["option_fake_v60_desc"] = "Should the fake versions of all engines activated in the game?",
+		["br192_sm_rhc_name"] = 		"Class 192 045 Rhein Cargo",
+
+		["br192_sm_pimk_name"] = 		"Class 192 962 Pimk Rail",
+
+		--- DC ---
+
+		["br193_dc_siemens_name"] = 	"Class170 020 Siemens",
+
+		["br193_dc_db_name"] = 			"Class170 021 DB Cargo (Poland)",
+
+		["br193_dc_db2_name"] = 		"Class 191 013 DB Schenker (Italy)",
+
+		["br193_dc_mrce_name"] = 		"Class 191 022 MRCE (Italy)",
+
+
+        -- Vorspann
+        ["Vorspann_br193"] = "Active lead engines?",
+        ["option_vorspann_br193_desc"] = "Active the lead engines (with front panto raised)?",
+
+		["br193_ac_siemens_name_vorspann"] = 	"Lead - Class 192 961 AC Siemens",
+		["br193_ac_siemens2_name_vorspann"] = 	"Lead - Class 193 780 AC Siemens Vectron 230 km/h",
+
+		["br193_ac_dsb_name_vorspann"] = 		"Lead - EB 3202 AC DSB",
+		["br193_ac_dsb2_name_vorspann"] = 		"Lead - EB 3240 AC DSB Vectron Nr. 1000",
+
+		["br193_ac_ell_name_vorspann"] = 		"Lead - Class 193 208 AC ELL",
+		["br193_ac_ell2_name_vorspann"] = 		"Lead - Class 193 208 AC ELL/Rurtalbahn Cargo",
+		["br193_ac_ell3_name_vorspann"] = 		"Lead - Class 193 208 AC ELL/Eccorail",
+		["br193_ac_ell4_name_vorspann"] = 		"Lead - Class 193 247 AC ELL (color white)",
+
+		["br193_ac_flix_name_vorspann"] = 		"Lead - Class 243 002 AC Flixtrain/Hectorrail",
+		["br193_ac_flix2_name_vorspann"] = 		"Lead - Class 193 813 AC Flixtrain",
+		["br193_ac_flix3_name_vorspann"] = 		"Lead - Class 193 861 AC Flixtrain",
+
+		["br193_ac_mrce_name_vorspann"] = 		"Lead - Class 193 874 AC MRCE",
+		["br193_ac_mrce2_name_vorspann"] = 		"Lead - Class 193 603 AC MRCE",
+		["br193_ac_mrce3_name_vorspann"] = 		"Lead - Class 193 852 AC MRCE",
+		["br193_ac_mrce4_name_vorspann"] = 		"Lead - Class 193 864 AC MRCE",
+
+		["br193_ac_nrail_name_vorspann"] = 		"Lead - Class 193 922 AC Northrail",
+
+		["br193_ac_retrack_name_vorspann"] = 	"Lead - Class 193 815 AC Retrack (Kätchen)",
+		["br193_ac_retrack2_name_vorspann"] = 	"Lead - Class 193 811 AC Retrack (Jule)",
+		["br193_ac_retrack3_name_vorspann"] = 	"Lead - Class 193 872 AC Retrack (Transpetrol)",
+
+		["br193_ac_rpool_name_vorspann"] = 		"Lead - Class 193 802 AC Railpool Regio Bayern",
+		["br193_ac_rpool2_name_vorspann"] = 	"Lead - Class 193 994 AC Railpool",
+		["br193_ac_rpool3_name_vorspann"] = 	"Lead - Class 193 813 AC Railpool",
+		["br193_ac_rpool4_name_vorspann"] = 	"Lead - Class 193 813 AC Railpool (Knorrbremse)",
+		["br193_ac_rpool5_name_vorspann"] = 	"Lead - Class 193 804 AC Railpool",
+
+		["br193_ac_setg_name_vorspann"] = 		"Lead - Class 193 218 AC SETG (Beethoven 15 years SETG)",
+		["br193_ac_setg2_name_vorspann"] = 		"Lead - Class 193 218 AC SETG (Beethoven 20 years SETG)",
+		["br193_ac_setg3_name_vorspann"] = 		"Lead - Class 193 218 AC SETG (Silent night, holy night)",
+		["br193_ac_setg4_name_vorspann"] = 		"Lead - Class 193 812 AC SETG (white)",
+		["br193_ac_setg5_name_vorspann"] = 		"Lead - Class 193 204 AC SETG (Mozart)",
+		["br193_ac_setg6_name_vorspann"] = 		"Lead - Class 193 831 AC SETG (Christian Doppler)",
+
+		--- Smartron ---
+
+		["br192_sm_siemens_name_vorspann"] = 	"Lead - Class BR 192 001 Siemens",
+
+		["br192_sm_bbl_name_vorspann"] = 		"Lead - Class 192 008 BBL Logistik",
+
+		["br192_sm_evb_name_vorspann"] = 		"Lead - Class 192 005 EVB",
+		["br192_sm_evb2_name_vorspann"] = 		"Lead - Class 192 076 EVB (Black Forest Terminal)",
+
+		["br192_sm_nrail_name_vorspann"] = 		"Lead - Class 192 017 Northrail",
+		["br192_sm_nrail2_name_vorspann"] = 	"Lead - Class 192 015 Northrail/ RTB Cargo",
+
+		["br192_sm_rhc_name_vorspann"] = 		"Lead - Class 192 045 Rhein Cargo",
+		--- DC ---
+
+		["br193_dc_siemens_name_vorspann"] = 	"Lead - Class 170 020 Siemens",
+
+		["br193_dc_db_name_vorspann"] = 		"Lead - Class 170 021 DB Cargo (Poland)",
+
+		["br193_dc_db2_name_vorspann"] = 		"Lead - Class 191 013 DB Schenker (Italy)",
+
+		["br193_dc_mrce_name_vorspann"] = 		"Lead - Class 191 022 MRCE (Italy)",
+
+        -- Fake
+        ["Fake_br193"] = "Active fake engines?",
+        ["option_fake_br193_desc"] = "Active the fake engines (pantos down, no light, no driver)?",
+
+		["br193_ms_siemens_name_fake"] = 	"Fake - Class 193 901 MS Siemens",
+		["br193_ms_siemens2_name_fake"] = 	"Fake - Class 6193 400 MS Siemens (Vectron 230 km/h)",
+		["br193_ms_siemens3_name_fake"] = 	"Fake - Class 193 844 MS Siemens (Creating Corridors)",
+
+		["br193_ms_akiem_name_fake"] = 		"Fake - Class 193 888 MS Akiem (w/o Italy)",
+		["br193_ms_akiem2_name_fake"] = 	"Fake - Class 193 890 MS Akiem (Ecco Rail)",
+
+		["br193_ms_alpha_name_fake"] = 		"Fake - Class 193 403 MS Alpha Trains (w/ Italy)",
+		["br193_ms_alpha2_name_fake"] = 	"Fake - Class 193 588 MS Alpha Trains (w/o Italy)",
+		["br193_ms_alpha3_name_fake"] = 	"Fake - Class 193 586 MS Alpha Trains (CD Cargo)",
+		["br193_ms_alpha4_name_fake"] = 	"Fake - Class 193 405 MS Alpha Trains (Green Cargo)",
+		["br193_ms_alpha5_name_fake"] = 	"Fake - Class 193 587 MS Alpha Trains (CD Cargo)",
+
+		["br193_ms_bls_name_fake"] = 		"Fake - Class 193 494 MS BLS Cargo (Alpinisten)",
+		["br193_ms_bls2_name_fake"] = 		"Fake - Class 475 402 MS BLS Cargo (Alpinisten)",
+		["br193_ms_bls3_name_fake"] = 		"Fake - Class 475 422 MS BLS Cargo (The New Alpinist",
+		["br193_ms_bls4_name_fake"] = 		"Fake - Class 475 416 MS BLS Cargo (without foil)",
+
+		["br193_ms_boxx_name_fake"] = 		"Fake - Class 193 833 MS BoxXpress.de",
+		["br193_ms_boxx2_name_fake"] = 		"Fake - Class 6193 117 MS BoxXpress.eu",
+
+		["br193_ms_captrain_name_fake"] = 	"Fake - Class 193 892 MS Captrain (Jerome)",
+
+		["br193_ms_cu_name_fake"] = 		"Fake - Class 370 052 MS Cargounit",
+		["br193_ms_cu2_name_fake"] = 		"Fake - Class 370 051 MS Cargounit/CD Cargo",
+
+		["br193_ms_db_name_fake"] = 		"Fake - Class 193 302 MS DB (w/ Italy)",
+		["br193_ms_db2_name_fake"] = 		"Fake - Class 193 394 MS DB (Rail Bridge Ukraine)",
+		["br193_ms_db3_name_fake"] = 		"Fake - Class 193 371 MS DB (w/o Italy)",
+		["br193_ms_db4_name_fake"] = 		"Fake - Class 193 388 MS DB (#DBCargofährt)",
+		["br193_ms_db5_name_fake"] = 		"Fake - Class 193 560 MS DB (Güter gehören auf die Schiene)",
+		["br193_ms_db6_name_fake"] = 		"Fake - Class 193 360 MS DB (I am European)",
+		["br193_ms_db7_name_fake"] = 		"Fake - Class 193 363 MS DB (I am a Climate Hero)",
+		["br193_ms_db8_name_fake"] = 		"Fake - Class 193 312 MS DB (Das ist Grün Offenburg)",
+		["br193_ms_db9_name_fake"] = 		"Fake - Class 193 357 MS DB (Das ist Grün Saarbrücken)",
+		["br193_ms_db10_name_fake"] = 		"Fake - Class 193 361 MS DB (Das ist Grün Senftenberg)",
+
+		["br193_ms_hupac_name_fake"] = 		"Fake - Class 193 492 MS Hupac",
+		["br193_ms_hupac2_name_fake"] = 	"Fake - Class 193 493 MS Hupac/WRS",
+
+		["br193_ms_ell_name_fake"] = 		"Fake - Class 193 214 MS ELL (w/o Italy)",
+		["br193_ms_ell2_name_fake"] = 		"Fake - Class 193 299 MS ELL (w/ Italy)",
+		["br193_ms_ell3_name_fake"] = 		"Fake - Class 193 756 MS ELL (Vectron #750)",
+		["br193_ms_ell4_name_fake"] = 		"Fake - Class 193 759 MS ELL (NS Netherlands)",
+		["br193_ms_ell5_name_fake"] = 		"Fake - Class 193 692 MS ELL (Nightjet)",
+		["br193_ms_ell6_name_fake"] = 		"Fake - Class 193 293 MS ELL (Ceske Drahy)",
+		["br193_ms_ell7_name_fake"] = 		"Fake - Class 383 003 MS CD Cargo",
+
+		["br193_ms_lomo_name_fake"] = 		"Fake - Class 193 772 MS Lokomotion (stripe blue)",
+		["br193_ms_lomo2_name_fake"] = 		"Fake - Class 193 777 MS Lokomotion (creme)",
+		["br193_ms_lomo3_name_fake"] = 		"Fake - Class 193 776 MS Lokomotion (stripe red)",
+		["br193_ms_lomo4_name_fake"] = 		"Fake - Class 193 774 MS Lokomotion (20 Years)",
+		["br193_ms_lomo5_name_fake"] = 		"Fake - Class 193 664 MS Lokomotion (MRCE)",
+
+		["br193_ms_mrce_name_fake"] = 		"Fake - Class 193 661 MS MRCE",
+		["br193_ms_mrce2_name_fake"] = 		"Fake - Class 193 639 MS BEACON",
+		["br193_ms_mrce3_name_fake"] = 		"Fake - Class 193 706 MS MRCE (Mercitalia)",
+		["br193_ms_mrce4_name_fake"] = 		"Fake - Class 193 639 MS BEACON (Mercitalia)",
+
+		["br193_ms_obb_name_fake"] = 		"Fake - Rh 1293 001 MS ÖBB",
+
+		["br193_ms_rpool_name_fake"] = 		"Fake - Class 6193 093 MS Railpool (w/o Italy)",
+		["br193_ms_rpool2_name_fake"] = 	"Fake - Class 6193 112 MS Railpool (w/ Italy)",
+
+		["br193_ms_pkp_name_fake"] = 		"Fake - Class 370 056 MS PKP Cargo (roof neongreen)",
+		["br193_ms_pkp2_name_fake"] = 		"Fake - Class 370 027 MS PKP Cargo (roof red)",
+		["br193_ms_pkp3_name_fake"] = 		"Fake - Class 370 022 MS PKP Cargo (roof blue)",
+		["br193_ms_pkp4_name_fake"] = 		"Fake - Class 383 053 MS PKP Cargo (Unitcredit) ",
+
+		["br193_ms_setg_name_fake"] = 		"Fake - Class 193 839 MS SETG (Alpenlok)",
+		["br193_ms_setg2_name_fake"] = 		"Fake - Class 193 821 MS SETG (Daniel)",
+		["br193_ms_setg3_name_fake"] = 		"Fake - Class 193 746 MS SETG (Jeder Mann)",
+		["br193_ms_setg4_name_fake"] = 		"Fake - Class 193 691 MS SETG (Die Waffen nieder)",
+		["br193_ms_setg5_name_fake"] = 		"Fake - Class 193 736 MS SETG (Marco Polo)",
+		["br193_ms_setg6_name_fake"] = 		"Fake - Class 193 692 MS SETG (Wood Works)",
+
+		--- AC ---
+
+		["br193_ac_siemens_name_fake"] = 	"Fake - Class 192 961 AC Siemens",
+		["br193_ac_siemens2_name_fake"] = 	"Fake - Class 193 780 AC Siemens Vectron 230km/h",
+
+		["br193_ac_dsb_name_fake"] = 		"Fake - EB 3202 AC DSB",
+		["br193_ac_dsb2_name_fake"] = 		"Fake - EB 3240 AC DSB Vectron Nr. 1000",
+
+		["br193_ac_ell_name_fake"] = 		"Fake - Class 193 208 AC ELL",
+		["br193_ac_ell2_name_fake"] = 		"Fake - Class 193 208 AC ELL/Rurtalbahn Cargo",
+		["br193_ac_ell3_name_fake"] = 		"Fake - Class 193 208 AC ELL/Eccorail",
+		["br193_ac_ell4_name_fake"] = 		"Fake - Class 193 247 AC ELL (color white)",
+
+		["br193_ac_flix_name_fake"] = 		"Fake - Class 243 002 AC Flixtrain/Hectorrail",
+		["br193_ac_flix2_name_fake"] = 		"Fake - Class 193 813 AC Flixtrain",
+		["br193_ac_flix3_name_fake"] = 		"Fake - Class 193 861 AC Flixtrain",
+
+		["br193_ac_mrce_name_fake"] = 		"Fake - Class 193 874 AC MRCE",
+		["br193_ac_mrce2_name_fake"] = 		"Fake - Class 193 603 AC MRCE",
+		["br193_ac_mrce3_name_fake"] = 		"Fake - Class 193 852 AC MRCE",
+		["br193_ac_mrce4_name_fake"] = 		"Fake - Class 193 864 AC MRCE",
+
+		["br193_ac_nrail_name_fake"] = 		"Fake - Class 193 922 AC Northrail",
+
+		["br193_ac_retrack_name_fake"] = 	"Fake - Class 193 815 AC Retrack (Kätchen)",
+		["br193_ac_retrack2_name_fake"] = 	"Fake - Class 193 811 AC Retrack (Jule)",
+		["br193_ac_retrack3_name_fake"] = 	"Fake - Class 193 872 AC Retrack (Transpetrol)",
+
+		["br193_ac_rpool_name_fake"] = 		"Fake - Class 193 802 AC Railpool Regio Bayern",
+		["br193_ac_rpool2_name_fake"] = 	"Fake - Class 193 994 AC Railpool",
+		["br193_ac_rpool3_name_fake"] = 	"Fake - Class 193 813 AC Railpool",
+		["br193_ac_rpool4_name_fake"] = 	"Fake - Class 193 813 AC Railpool (Knorrbremse)",
+		["br193_ac_rpool5_name_fake"] = 	"Fake - Class 193 804 AC Railpool",
+
+		["br193_ac_setg_name_fake"] = 		"Fake - Class 193 218 AC SETG (Beethoven 15 years SETG)",
+		["br193_ac_setg2_name_fake"] = 		"Fake - Class 193 218 AC SETG (Beethoven 20 years SETG)",
+		["br193_ac_setg3_name_fake"] = 		"Fake - Class 193 218 AC SETG (Silent night, holy night)",
+		["br193_ac_setg4_name_fake"] = 		"Fake - Class 193 812 AC SETG (white)",
+		["br193_ac_setg5_name_fake"] = 		"Fake - Class 193 204 AC SETG (Mozart)",
+		["br193_ac_setg6_name_fake"] = 		"Fake - Class 193 831 AC SETG (Christian Doppler)",
+
+		--- Smartron ---
+
+		["br192_sm_siemens_name_fake"] = 	"Fake - Class 192 001 Siemens",
+
+		["br192_sm_bbl_name_fake"] = 		"Fake - Class 192 008 BBL Logistik",
+
+		["br192_sm_evb_name_fake"] = 		"Fake - Class 192 005 EVB",
+		["br192_sm_evb2_name_fake"] = 		"Fake - Class 192 076 EVB (Black Forest Terminal)",
+
+		["br192_sm_nrail_name_fake"] = 		"Fake - Class 192 017 Northrail",
+		["br192_sm_nrail2_name_fake"] = 	"Fake - Class 192 015 Northrail/ RTB Cargo",
+
+		["br192_sm_rhc_name_fake"] = 		"Fake - Class 192 045 Rhein Cargo",
+
+		["br192_sm_pimk_name_fake"] = 		"Fake - Class 192 962 Pimk Rail",
+
+		--- DC ---
+
+		["br193_dc_siemens_name_fake"] = 	"Fake - Class 170 020 Siemens",
+
+		["br193_dc_db_name_fake"] = 		"Fake - Class 170 021 DB Cargo (Poland)",
+
+		["br193_dc_db2_name_fake"] = 		"Fake - Class 191 013 DB Schenker (Italy)",
+
+		["br193_dc_mrce_name_fake"] = 		"Fake - Class 191 022 MRCE (Italy)",
 
 	},
 	de = {
 
-		["mod_name"] = "Traxx 1",
-		["mod_desc"] = "V 60 der Deutschen Bundesbahn, später als Baureihe 260 sowie 261, sowie als Kleinlokomotiven bezeichnete Baureihen 360 und 361 sowie 364 und 365. Nach Ausstattung mit neuen Motoren auch noch als Baureihen 362 und 363.\nAll diese Baureihenbezeichnungen gehören zu den Rangierlokomotiven, die von den 1950er Jahren an bis heute im Einsatz sind. Auch viele private Eisenbahnunternehmen haben die Loks heute noch im Einsatz.\n\nAlle Loks sind zusätzlich als Assets enthalten.",
+		["mod_name"] = "Siemens Vectron MS und AC",
+		["mod_desc"] = "Der Vectron ist eine moderne Drehstromlokomotive für den internationalen Personen- und Güterverkehr in Europa. Der Vectron kann in 20 europäischen Ländern verkehren. Erstmal wurde der Vectron im Juli 2010 der Öffentlichkeit vorgestellt, seitdem ist die Lok bei vielen Staats- und Privatbahnen im Einsatz. In dem Paket sind die Loks BR 193 MS (Mehrsystem), BR 193 AC (Wechselstrom) und der Smartron enthalten. ",
 
-        ["v60_menu"] = "V 60 | BR 260/261 | BR 360 - 365",
-        ["v60_fake_menu"] = "V 60 Familie FAKE",
-        ["v60_rk900_menu"] = "V 60 Familie mit RK900",
-        ["v60_rk900_fake_menu"] = "V 60 Familie mit RK900 FAKE",
+        ["br193_ms_menu"] = "Vectron BR 193 MS",
+		["br193_ac_menu"] = "Vectron BR 193 AC",
+		["br193_dc_menu"] = "Vectron BR 193 DC",
+        ["br193_fake_ms_menu"] = "Vectron BR 193 MS Fakes",
+        ["br193_fake_ac_menu"] = "Vectron BR 193 AC Fakes",
+        ["br193_fake_dc_menu"] = "Vectron BR 193 DC Fakes",
+		["br193_desc"] = "Der Vectron ist eine moderene Drehstromlokomotive für den internationalen Personen- und Güterverkehr in Europa. 2014 wurde erstmal der Vectron MS vorgestellt mit einer Geschwindigkeit von 200 km/h (auch mit 160 km/h erhältlich) und einer Dauerleistung von 6400 kW.",
 
-        ["v60_vorserie"] = "V 60 Vorserie",
-        ["v60_vorserie_desc"] = "...",
+		["br192_menu"] = "Smartron BR 192",
+		["br192_fake_menu"] = "Smartron BR 192",
+		["br192_desc"] = "Die Smartron ist eine abgespeckte Version der Vectron. Die Smartron ist nur in blau metallic erhältlich, die Leistung beträgt 5600 kW und ist nur auf 140 km/h zugelassen, die Lok darf auch immer nur in einem Land verkehren. Die Smartron besitzt für Deutschland die Zugsicherungssysteme PZB/LZB und ETCS. ",
 
-        -- V60
-        ["v60_leicht_ar_name"] = "V 60 leicht (1956)",
-        ["v60_schwer_ar_name"] = "V 60 schwer (1956)",
-        ["v60_desc"] = "Die V 60 wurde entwickelt, um ausreichend Loks für den Rangierdienst zur Verfügung zu haben. Die Loks wurden ab 1956 ausgeliefert in zwei Varianten, einer leichteren und einer schwereren. Beide Varianten hatten denselben Motor verbaut, so dass die Leistungsdaten identisch waren. Auch an den Loknummern konnte man keinen Unterschied ablesen.",
+		["br193_ms"] = 	"Vectron als Mehrsystem-Lok mit 4 Stromabnehmern",
+		["br193_ac"] = 	"Vectron als Wechselstrom-Lok mit 2 Stromabnehmern",
+		["br193_zza"] = "Vectron als Wechselstrom-Lok mit 2 Stromabnehmern und Zugzielanzeiger",
+		["br192"] = 	"Smartron als Wechselstrom-Lok mit 2 Stromabnehmern",
 
-        ["v60_leicht_ar_rotated_name"] = "V 60 leicht [gedreht] (1956)",
-        ["v60_schwer_ar_rotated_name"] = "V 60 schwer [gedreht] (1956)",
+		["Ms_br193"] = "Vectron BR 193 Mehrsystem aktivieren?",
+		["option_ms_br193_desc"] = "Sollen die Vectron BR 193 für das Mehrsystem (Pantos unten, kein Licht, kein Fahrer) aktiviert werden?",
+		["Ac_br193"] = "Vectron BR 193 Wechselstromsystem aktivieren?",
+		["option_ac_br193_desc"] = "Sollen die Vectron BR 193 für das Wechselstromsystem (Pantos unten, kein Licht, kein Fahrer) aktiviert werden?",
+		["dc_br193"] = "Vectron BR 193 Gleichstromsystem aktivieren?",
+		["option_dc_br193_desc"] = "Sollen die Vectron Br 193 für das Gleichstromsystem (Pantos unten, kein Licht, kein Fahrer) aktiviert werden?",
+		["Sm_br193"] = "Smartron BR 192 aktivieren?",
+		["option_sm_br193_desc"] = "Sollen die Smartron BR 192 (Pantos unten, kein Licht, kein Fahrer) aktiviert werden?",
+		["dachinl_br193"] = "Vectron BR 193 mit DACHINL Ausrüstung aktivieren?",
+		["option_dachinal_br193_desc"] = "Sollen die Vectron BR 193 mit DACHINL Ausrüstung (Pantos unten, kein Licht, kein Fahrer) aktiviert werden?",
+		["osteuropa_br193"] = "Vectron BR 193 mit Osteuropa Ausrüstung aktivieren?",
+		["option_osteuropa_br193_desc"] = "Sollen die Vectron BR 193 mit Osteuropa Ausrüstung (Pantos unten, kein Licht, kein Fahrer) aktiviert werden?",
+		["skandinavien_br193"] = "Smartron Vectron BR 193 mit Skandinavien Ausrüstung aktivieren?",
+		["option_skandinavien_br193_desc"] = "Sollen die Vectron BR 193 mit Skandinavien Ausrüstung  (Pantos unten, kein Licht, kein Fahrer) aktiviert werden?",
 
-        -- x60 (leicht)
-        ["260_ar_name"] = "BR 260 purpurrot (1968)",
-        ["260_ob_name"] = "BR 260 ozeanblau/beige (1974)",
-        ["360_ob_name"] = "BR 360 ozeanblau/beige (1987)",
-        ["360_or_name"] = "BR 360 orientrot (1987)",
-        ["360_or_dbag_name"] = "BR 360 orientrot DBAG (1994)",
-        ["760_gas_name"] = "BR 760 Erdgas [ex BR 360] (1999)",
-        ["760_erdgas_desc"] = "Im Rahmen einer Hauptuntersuchung wurde im Jahr 1999 die 360 877 mit einem Erdgasmotor ausgerüstet und ab 29.2.2000 beim Fahrzeug- und Technologiezentrum München als 760 877 stationiert. Eingesetzt wurde die Lok zum Rangieren von Reisezugwagen in München Hbf, wo im Betriebswerk auch eine eigene Erdgas-Tankstelle für sie errichtet wurde. Nachdem der Versuchsbetrieb abgeschlossen war, wurde die Lok im Jahr 2002 z-gestellt und zum 01.10.2004 ausgemustert.",
-        ["360_gleiskraft_name"] = "BR 360 Gleiskraft (2003)",
-        ["360_boegl_name"] = "BR 360 Max Bögl (2010)",
-        ["360_brohltal_name"] = "BR 360 Brohltalbahn (2007)",
-        ["260_desc"] = "Mit Einführung der Computernummern wurde aus der V 60 in der leichten Version die Baureihe 260. Somit konnte man erstmals an der Nummer erkennen, um welche Ausführung es sich handelt. Der Einsatzzweck blieb unverändert bestehen.",
-        ["360_desc"] = "Ab 1987 wurden die Lokbaureihe zur \"Kleinlok\" herabgestuft. Diese Einstufung sparte Personalkosten, da die Bundesbahn nun keine \"Lokführer\" mehr einsetzen musste, sondern \"Kleinlokbediener\", deren Ausbildung günstiger war. Daher wurde aus der BR 260 die BR 360. Bis 2002 wurden alle BR 360 entweder auf Funkfernsteuerung (=> BR 364) umgebaut oder abgestellt.",
+		["br193_ms_siemens_name"] = 	"BR 193 901 MS Siemens",
+		["br193_ms_siemens2_name"] = 	"BR 6193 400 MS Siemens (Vectron 230 km/h)",
+		["br193_ms_siemens3_name"] = 	"BR 193 844 MS Siemens (Creating Corridors)",
 
-        ["260_ar_rotated_name"] = "BR 260 purpurrot [gedreht] (1968)",
-        ["260_ob_rotated_name"] = "BR 260 ozeanblau/beige [gedreht] (1974)",
-        ["360_ob_rotated_name"] = "BR 360 ozeanblau/beige [gedreht] (1987)",
-        ["360_or_rotated_name"] = "BR 360 orientrot [gedreht] (1987)",
-        ["360_or_dbag_rotated_name"] = "BR 360 orientrot DBAG [gedreht] (1994)",
-        ["760_gas_rotated_name"] = "BR 760 Erdgas [ex BR 360] [gedreht] (1999)",
-        ["360_gleiskraft_rotated_name"] = "BR 360 Gleiskraft [gedreht] (2003)",
-        ["360_boegl_rotated_name"] = "BR 360 Max Bögl [gedreht] (2010)",
-        ["360_brohltal_rotated_name"] = "BR 360 Brohltalbahn [gedreht] (2007)",
+		["br193_ms_akiem_name"] = 		"BR 193 888 MS Akiem (ohne Italien)",
+		["br193_ms_akiem2_name"] = 		"BR 193 890 MS Akiem (Ecco Rail)",
 
-        -- x61 (schwer)
-        ["261_ar_name"] = "BR 261 purpurrot (1968)",
-        ["261_ob_name"] = "BR 261 ozeanblau/beige (1974)",
-        ["361_ob_name"] = "BR 361 ozeanblau/beige (1987)",
-        ["361_or_name"] = "BR 361 orientrot (1987)",
-        ["361_or_dbag_name"] = "BR 361 orientrot DBAG (1994)",
-        ["361_keg_name"] = "BR 361 KEG 0651 (1998)",
-        ["261_desc"] = "Mit Einführung der Computernummern wurde aus der V 60 in der schweren Version die Baureihe 261. Somit konnte man erstmals an der Nummer erkennen, um welche Ausführung es sich handelt. Der Einsatzzweck blieb unverändert bestehen.",
-        ["361_desc"] = "Ab 1987 wurden die Lokbaureihe zur \"Kleinlok\" herabgestuft. Diese Einstufung sparte Personalkosten, da die Bundesbahn nun keine \"Lokführer\" mehr einsetzen musste, sondern \"Kleinlokbediener\", deren Ausbildung günstiger war. Daher wurde aus der BR 261 die BR 361. Bis 2000 wurden allen BR 361 entweder auf Funkfernsteuerung (=> BR 365) umgebaut oder abgestellt.",
+		["br193_ms_alpha_name"] = 		"BR 193 403 MS Alpha Trains (mit Italien)",
+		["br193_ms_alpha2_name"] = 		"BR 193 588 MS Alpha Trains (ohne Italien)",
+		["br193_ms_alpha3_name"] = 		"BR 193 586 MS Alpha Trains (CD Cargo)",
+		["br193_ms_alpha4_name"] = 		"BR 193 405 MS Alpha Trains (Green Cargo)",
+		["br193_ms_alpha5_name"] = 		"BR 193 587 MS Alpha Trains (CD Cargo)",
 
-        ["261_ar_rotated_name"] = "BR 261 purpurrot [gedreht] (1968)",
-        ["261_ob_rotated_name"] = "BR 261 ozeanblau/beige [gedreht] (1974)",
-        ["361_ob_rotated_name"] = "BR 361 ozeanblau/beige [gedreht] (1987)",
-        ["361_or_rotated_name"] = "BR 361 orientrot [gedreht] (1987)",
-        ["361_or_dbag_rotated_name"] = "BR 361 orientrot DBAG [gedreht] (1994)",
-        ["361_keg_rotated_name"] = "BR 361 KEG 0651 [gedreht] (1998)",
+		["br193_ms_bls_name"] = 		"BR 193 494 MS BLS Cargo (Alpinisten)",
+		["br193_ms_bls2_name"] = 		"BR 475 402 MS BLS Cargo (Alpinisten)",
+		["br193_ms_bls3_name"] = 		"BR 475 422 MS BLS Cargo (The New Alpinist",
+		["br193_ms_bls4_name"] = 		"BR 475 416 MS BLS Cargo (ohne Folierung)",
 
-        -- 362 (leicht+Motor+Funk)
-        ["362_vr_name"] = "BR 362 verkehrsrot (1997)",
-        ["362_hsl_name"] = "BR 362 HSL (2014)",
-        ["362_bke_name"] = "BR 362 BKE (2019)",
-        ["362_nrs_name"] = "BR 362 NRS (2013)",
-        ["362_desc"] = "Seit 1997 werden die Maybach-Motoren bei Aufarbeitungen durch Caterpillar-Zwölfzylindermotoren ersetzt, wobei dieser Umbau nur noch bei Loks mit Funkfernsteuerung ausgeführt wird. Diese Loks tragen die Bezeichnungen BR 362.",
+		["br193_ms_boxx_name"] = 		"BR 193 833 MS BoxXpress.de",
+		["br193_ms_boxx2_name"] = 		"BR 6193 117 MS BoxXpress.eu",
 
-        ["362_vr_rotated_name"] = "BR 362 verkehrsrot [gedreht] (1997)",
-        ["362_hsl_rotated_name"] = "BR 362 HSL [gedreht] (2014)",
-        ["362_bke_rotated_name"] = "BR 362 BKE [gedreht](2019)",
-        ["362_nrs_rotated_name"] = "BR 362 NRS [gedreht] (2013)",
+		["br193_ms_captrain_name"] = 	"BR 193 892 MS Captrain (Jerome)",
 
-        ["362_vr_rk900_name"] = "BR 362 verkehrsrot [RK900 oben] (1997)",
-        ["362_hsl_rk900_name"] = "BR 362 HSL [RK900 oben] (2014)",
-        ["362_bke_rk900_name"] = "BR 362 BKE [RK900 oben] (2019)",
-        ["362_nrs_rk900_name"] = "BR 362 NRS [RK900 oben] (2013)",
+		["br193_ms_cu_name"] = 			"BR 370 052 MS Cargounit",
+		["br193_ms_cu2_name"] = 		"BR 370 051 MS Cargounit/CD Cargo",
 
-        ["362_vr_rk900_down_name"] = "BR 362 verkehrsrot [RK900 unten] (1997)",
-        ["362_hsl_rk900_down_name"] = "BR 362 HSL [RK900 unten] (2014)",
-        ["362_bke_rk900_down_name"] = "BR 362 BKE [RK900 unten] (2019)",
-        ["362_nrs_rk900_down_name"] = "BR 362 NRS [RK900 unten] (2013)",
+		["br193_ms_db_name"] = 			"BR 193 302 MS DB (mit Italien)",
+		["br193_ms_db2_name"] = 		"BR 193 394 MS DB (Schienenbrücke Ukraine)",
+		["br193_ms_db3_name"] = 		"BR 193 371 MS DB (ohne Italien)",
+		["br193_ms_db4_name"] = 		"BR 193 388 MS DB (#DBCargofährt)",
+		["br193_ms_db5_name"] = 		"BR 193 560 MS DB (Güter gehören auf die Schiene)",
+		["br193_ms_db6_name"] = 		"BR 193 360 MS DB (I am European)",
+		["br193_ms_db7_name"] = 		"BR 193 363 MS DB (I am a Climate Hero)",
+		["br193_ms_db8_name"] = 		"BR 193 312 MS DB (Das ist Grün Offenburg)",
+		["br193_ms_db9_name"] = 		"BR 193 357 MS DB (Das ist Grün Saarbrücken)",
+		["br193_ms_db10_name"] = 		"BR 193 361 MS DB (Das ist Grün Senftenberg)",
 
-        ["362_vr_rotated_rk900_name"] = "BR 362 verkehrsrot [gedreht] [RK900 oben] (1997)",
-        ["362_hsl_rotated_rk900_name"] = "BR 362 HSL [gedreht] [RK900 oben] (2014)",
-        ["362_bke_rotated_rk900_name"] = "BR 362 BKE [gedreht] [RK900 oben] (2019)",
-        ["362_nrs_rotated_rk900_name"] = "BR 362 NRS [gedreht] [RK900 oben] (2013)",
+		["br193_ms_hupac_name"] = 		"BR 193 492 MS Hupac",
+		["br193_ms_hupac2_name"] = 		"BR 193 493 MS Hupac/WRS",
 
-        ["362_vr_rotated_rk900_down_name"] = "BR 362 verkehrsrot [gedreht] [RK900 unten] (1997)",
-        ["362_hsl_rotated_rk900_down_name"] = "BR 362 HS [gedreht]L [RK900 unten] (2014)",
-        ["362_bke_rotated_rk900_down_name"] = "BR 362 BKE [gedreht] [RK900 unten] (2019)",
-        ["362_nrs_rotated_rk900_down_name"] = "BR 362 NRS [gedreht] [RK900 unten] (2013)",
+		["br193_ms_ell_name"] = 		"BR 193 214 MS ELL (ohne Italien)",
+		["br193_ms_ell2_name"] = 		"BR 193 299 MS ELL (mit Italien)",
+		["br193_ms_ell3_name"] = 		"BR 193 756 MS ELL (Vectron #750)",
+		["br193_ms_ell4_name"] = 		"BR 193 759 MS ELL (NS Niederlande)",
+		["br193_ms_ell5_name"] = 		"BR 193 692 MS ELL (Nightjet)",
+		["br193_ms_ell6_name"] = 		"BR 193 293 MS ELL (Ceske Drahy)",
+		["br193_ms_ell7_name"] = 		"BR 383 003 MS CD Cargo",
 
-        -- 363 (schwer+Motor+Funk)
-        ["363_vr_name"] = "BR 363 verkehrsrot (1997)",
-        ["363_ice_name"] = "BR 363 IC-Lackierung (2018)",
-        ["363_hsl_name"] = "BR 363 HSL (2014)",
-        ["363_press_name"] = "BR 363 PRESS (2007)",
-        ["363_ra_name"] = "BR 363 RailAdventure (2020)",
-        ["363_rst_name"] = "BR 363 RST (2016)",
-        ["363_setg_name"] = "V 60.03 SETG [ex BR 363] (2017)",
-        ["363_hslrot_name"] = "BR 363 HSL (2015)",
-        ["363_bke_name"] = "BR 363 BKE (2018)",
-        ["363_sbs_name"] = "BR 363 SBS (2014)",
-        ["363_mwb_name"] = "BR 363 MWB (2006)",
-        ["363_tlvg_name"] = "BR 363 TLVG [als 261 654-5] (2017)",
-        ["363_railion_name"] = "BR 363 Railion (2003)",
-        ["363_desc"] = "Seit 1997 werden die Maybach-Motoren bei Aufarbeitungen durch Caterpillar-Zwölfzylindermotoren ersetzt, wobei dieser Umbau nur noch bei Loks mit Funkfernsteuerung ausgeführt wird. Diese Loks tragen die Bezeichnungen BR 363.",
+		["br193_ms_lomo_name"] = 		"BR 193 772 MS Lokomotion (Streifen blau)",
+		["br193_ms_lomo2_name"] = 		"BR 193 777 MS Lokomotion (beige)",
+		["br193_ms_lomo3_name"] = 		"BR 193 776 MS Lokomotion (Streifen rot)",
+		["br193_ms_lomo4_name"] = 		"BR 193 774 MS Lokomotion (20 Years)",
+		["br193_ms_lomo5_name"] = 		"BR 193 664 MS Lokomotion (MRCE)",
 
-        ["363_vr_rotated_name"] = "BR 363 verkehrsrot [gedreht] (1997)",
-        ["363_ice_rotated_name"] = "BR 363 IC-Lackierung [gedreht] (2018)",
-        ["363_hsl_rotated_name"] = "BR 363 HSL [gedreht] (2014)",
-        ["363_press_rotated_name"] = "BR 363 PRESS [gedreht] (2007)",
-        ["363_ra_rotated_name"] = "BR 363 RailAdventure [gedreht] (2020)",
-        ["363_rst_rotated_name"] = "BR 363 RST [gedreht] (2016)",
-        ["363_setg_rotated_name"] = "V 60.03 SETG [ex BR 363] [gedreht] (2017)",
-        ["363_hslrot_rotated_name"] = "BR 363 HSL [gedreht] (2015)",
-        ["363_bke_rotated_name"] = "BR 363 BKE [gedreht] (2018)",
-        ["363_sbs_rotated_name"] = "BR 363 SBS [gedreht] (2014)",
-        ["363_mwb_rotated_name"] = "BR 363 MWB [gedreht] (2006)",
-        ["363_tlvg_rotated_name"] = "BR 363 TLVG [als 261 654-5] [gedreht] (2017)",
-        ["363_railion_rotated_name"] = "BR 363 Railion [gedreht] (2003)",
+		["br193_ms_mrce_name"] = 		"BR 193 661 MS MRCE",
+		["br193_ms_mrce2_name"] = 		"BR 193 639 MS BEACON",
+		["br193_ms_mrce3_name"] = 		"BR 193 706 MS MRCE (Mercitalia)",
+		["br193_ms_mrce4_name"] = 		"BR 193 639 MS BEACON (Mercitalia)",
 
-        ["363_vr_rk900_name"] = "BR 363 verkehrsrot [RK900 oben] (1997)",
-        ["363_ice_rk900_name"] = "BR 363 IC-Lackierung [RK900 oben] (2018)",
-        ["363_hsl_rk900_name"] = "BR 363 HSL [RK900 oben] (2014)",
-        ["363_press_rk900_name"] = "BR 363 PRESS [RK900 oben] (2007)",
-        ["363_ra_rk900_name"] = "BR 363 RailAdventure [RK900 oben] (2020)",
-        ["363_rst_rk900_name"] = "BR 363 RST [RK900 oben] (2016)",
-        ["363_setg_rk900_name"] = "V 60.03 SETG [ex BR 363] [RK900 oben] (2017)",
-        ["363_hslrot_rk900_name"] = "BR 363 HSL [RK900 oben] (2015)",
-        ["363_bke_rk900_name"] = "BR 363 BKE [RK900 oben] (2018)",
-        ["363_sbs_rk900_name"] = "BR 363 SBS [RK900 oben] (2014)",
-        ["363_mwb_rk900_name"] = "BR 363 MWB [RK900 oben] (2006)",
-        ["363_tlvg_rk900_name"] = "BR 363 TLVG [als 261 654-5] [RK900 oben] (2017)",
-        ["363_railion_rk900_name"] = "BR 363 Railion [RK900 oben] (2003)",
+		["br193_ms_obb_name"] = 		"Rh 1293 001 MS ÖBB",
 
-        ["363_vr_rk900_down_name"] = "BR 363 verkehrsrot [RK900 unten] (1997)",
-        ["363_ice_rk900_down_name"] = "BR 363 IC-Lackierung [RK900 unten] (2018)",
-        ["363_hsl_rk900_down_name"] = "BR 363 HSL [RK900 unten] (2014)",
-        ["363_press_rk900_down_name"] = "BR 363 PRESS [RK900 unten] (2007)",
-        ["363_ra_rk900_down_name"] = "BR 363 RailAdventure [RK900 unten] (2020)",
-        ["363_rst_rk900_down_name"] = "BR 363 RST [RK900 unten] (2016)",
-        ["363_setg_rk900_down_name"] = "V 60.03 SETG [ex BR 363] [RK900 unten] (2017)",
-        ["363_hslrot_rk900_down_name"] = "BR 363 HSL [RK900 unten] (2015)",
-        ["363_bke_rk900_down_name"] = "BR 363 BKE [RK900 unten] (2018)",
-        ["363_sbs_rk900_down_name"] = "BR 363 SBS [RK900 unten] (2014)",
-        ["363_mwb_rk900_down_name"] = "BR 363 MWB [RK900 unten] (2006)",
-        ["363_tlvg_rk900_down_name"] = "BR 363 TLVG [als 261 654-5] [RK900 unten] (2017)",
-        ["363_railion_rk900_down_name"] = "BR 363 Railion [RK900 unten] (2003)",
+		["br193_ms_rpool_name"] = 		"BR 6193 093 MS Railpool (ohne Italien)",
+		["br193_ms_rpool2_name"] = 		"BR 6193 112 MS Railpool (mit Italien)",
 
-        ["363_vr_rotated_rk900_name"] = "BR 363 verkehrsrot [gedreht] [RK900 oben] (1997)",
-        ["363_ice_rotated_rk900_name"] = "BR 363 IC-Lackierung [gedreht] [RK900 oben] (2018)",
-        ["363_hsl_rotated_rk900_name"] = "BR 363 HSL [gedreht] [RK900 oben] (2014)",
-        ["363_press_rotated_rk900_name"] = "BR 363 PRESS [gedreht] [RK900 oben] (2007)",
-        ["363_ra_rotated_rk900_name"] = "BR 363 RailAdventure [gedreht] [RK900 oben] (2020)",
-        ["363_rst_rotated_rk900_name"] = "BR 363 RST [gedreht] [RK900 oben] (2016)",
-        ["363_setg_rotated_rk900_name"] = "V 60.03 SETG [gedreht] [ex BR 363] [RK900 oben] (2017)",
-        ["363_hslrot_rotated_rk900_name"] = "BR 363 HSL [gedreht] [RK900 oben] (2015)",
-        ["363_bke_rotated_rk900_name"] = "BR 363 BKE [gedreht] [RK900 oben] (2018)",
-        ["363_sbs_rotated_rk900_name"] = "BR 363 SBS [gedreht] [RK900 oben] (2014)",
-        ["363_mwb_rotated_rk900_name"] = "BR 363 MWB [gedreht] [RK900 oben] (2006)",
-        ["363_tlvg_rotated_rk900_name"] = "BR 363 TLVG [als 261 654-5] [gedreht] [RK900 oben] (2017)",
-        ["363_railion_rotated_rk900_name"] = "BR 363 Railion [gedreht] [RK900 oben] (2003)",
+		["br193_ms_pkp_name"] = 		"BR 370 056 MS PKP Cargo (Dach neongrün)",
+		["br193_ms_pkp2_name"] = 		"BR 370 027 MS PKP Cargo (Dach rot)",
+		["br193_ms_pkp3_name"] = 		"BR 370 022 MS PKP Cargo (Dach blau)",
+		["br193_ms_pkp4_name"] = 		"BR 383 053 MS PKP Cargo (Unitcredit) ",
 
-        ["363_vr_rotated_rk900_down_name"] = "BR 363 verkehrsrot [gedreht] [RK900 unten] (1997)",
-        ["363_ice_rotated_rk900_down_name"] = "BR 363 IC-Lackierung [gedreht] [RK900 unten] (2018)",
-        ["363_hsl_rotated_rk900_down_name"] = "BR 363 HSL [gedreht] [RK900 unten] (2014)",
-        ["363_press_rotated_rk900_down_name"] = "BR 363 PRESS [gedreht] [RK900 unten] (2007)",
-        ["363_ra_rotated_rk900_down_name"] = "BR 363 RailAdventure [gedreht] [RK900 unten] (2020)",
-        ["363_rst_rotated_rk900_down_name"] = "BR 363 RST [gedreht] [RK900 unten] (2016)",
-        ["363_setg_rotated_rk900_down_name"] = "V 60.03 SETG [gedreht] [ex BR 363] [RK900 unten] (2017)",
-        ["363_hslrot_rotated_rk900_down_name"] = "BR 363 HSL [gedreht] [RK900 unten] (2015)",
-        ["363_bke_rotated_rk900_down_name"] = "BR 363 BKE [gedreht] [RK900 unten] (2018)",
-        ["363_sbs_rotated_rk900_down_name"] = "BR 363 SBS [gedreht] [RK900 unten] (2014)",
-        ["363_mwb_rotated_rk900_down_name"] = "BR 363 MWB [gedreht] [RK900 unten] (2006)",
-        ["363_tlvg_rotated_rk900_down_name"] = "BR 363 TLVG [als 261 654-5] [gedreht] [RK900 unten] (2017)",
-        ["363_railion_rotated_rk900_down_name"] = "BR 363 Railion [gedreht] [RK900 unten] (2003)",
+		["br193_ms_setg_name"] = 		"BR 193 839 MS SETG (Alpenlok)",
+		["br193_ms_setg2_name"] = 		"BR 193 821 MS SETG (Daniel)",
+		["br193_ms_setg3_name"] = 		"BR 193 746 MS SETG (Jeder Mann)",
+		["br193_ms_setg4_name"] = 		"BR 193 691 MS SETG (Die Waffen nieder)",
+		["br193_ms_setg5_name"] = 		"BR 193 736 MS SETG (Marco Polo)",
+		["br193_ms_setg6_name"] = 		"BR 193 692 MS SETG (Wood Works)",
 
-        -- 364 (leicht+Funk)
-        ["364_ob_name"] = "BR 364 ozeanblau/beige (1987)",
-        ["364_or_name"] = "BR 364 orientrot (1987)",
-        ["364_ob_dbag_name"] = "BR 364 ozeanblau/beige DBAG (1994)",
-        ["364_or_dbag_name"] = "BR 364 orientrot DBAG (1994)",
-        ["364_vr_name"] = "BR 364 verkehrsrot DBAG (1996)",
-        ["364_desc"] = "Ab 1987 wurden erste Loks mit einer Funkfernsteuerung ausgerüstet, wodurch die jeweilige Baureihe um 4 Stellen \"erhöht\" wurde: Aus der BR 360 enstand so die BR 364.",
+		--- AC ---
 
-        ["364_ob_rotated_name"] = "BR 364 ozeanblau/beige [gedreht] (1987)",
-        ["364_or_rotated_name"] = "BR 364 orientrot [gedreht] (1987)",
-        ["364_ob_dbag_rotated_name"] = "BR 364 ozeanblau/beige DBAG [gedreht] (1994)",
-        ["364_or_dbag_rotated_name"] = "BR 364 orientrot DBAG [gedreht] (1994)",
-        ["364_vr_rotated_name"] = "BR 364 verkehrsrot DBAG [gedreht] (1996)",
+		["br193_ac_siemens_name"] = 	"BR 192 961 AC Siemens",
+		["br193_ac_siemens2_name"] = 	"BR 193 780 AC Siemens Vectron 230km/h",
 
-        ["364_ob_rk900_name"] = "BR 364 ozeanblau/beige [RK900 oben] (1987)",
-        ["364_or_rk900_name"] = "BR 364 orientrot [RK900 oben] (1987)",
-        ["364_ob_dbag_rk900_name"] = "BR 364 ozeanblau/beige DBAG [RK900 oben] (1994)",
-        ["364_or_dbag_rk900_name"] = "BR 364 orientrot DBAG [RK900 oben] (1994)",
-        ["364_vr_rk900_name"] = "BR 364 verkehrsrot DBAG [RK900 oben] (1996)",
+		["br193_ac_dsb_name"] = 		"EB 3202 AC DSB",
+		["br193_ac_dsb2_name"] = 		"EB 3240 AC DSB Vectron Nr. 1000",
 
-        ["364_ob_rk900_down_name"] = "BR 364 ozeanblau/beige [RK900 unten] (1987)",
-        ["364_or_rk900_down_name"] = "BR 364 orientrot [RK900 unten] (1987)",
-        ["364_ob_dbag_rk900_down_name"] = "BR 364 ozeanblau/beige DBAG [RK900 unten] (1994)",
-        ["364_or_dbag_rk900_down_name"] = "BR 364 orientrot DBAG [RK900 unten] (1994)",
-        ["364_vr_rk900_down_name"] = "BR 364 verkehrsrot DBAG [RK900 unten] (1996)",
+		["br193_ac_ell_name"] = 		"BR 193 208 AC ELL",
+		["br193_ac_ell2_name"] = 		"BR 193 208 AC ELL/Rurtalbahn Cargo",
+		["br193_ac_ell3_name"] = 		"BR 193 208 AC ELL/Eccorail",
+		["br193_ac_ell4_name"] = 		"BR 193 247 AC ELL (Farbe weiß)",
 
-        ["364_ob_rotated_rk900_name"] = "BR 364 ozeanblau/beige [gedreht] [RK900 oben] (1987)",
-        ["364_or_rotated_rk900_name"] = "BR 364 orientrot [gedreht] [RK900 oben] (1987)",
-        ["364_ob_dbag_rotated_rk900_name"] = "BR 364 ozeanblau/beige DBAG [gedreht] [RK900 oben] (1994)",
-        ["364_or_dbag_rotated_rk900_name"] = "BR 364 orientrot DBAG [gedreht] [RK900 oben] (1994)",
-        ["364_vr_rotated_rk900_name"] = "BR 364 verkehrsrot DBAG [gedreht] [RK900 oben] (1996)",
+		["br193_ac_flix_name"] = 		"BR 243 002 AC Flixtrain/Hectorrail",
+		["br193_ac_flix2_name"] = 		"BR 193 813 AC Flixtrain",
+		["br193_ac_flix3_name"] = 		"BR 193 861 AC Flixtrain",
 
-        ["364_ob_rotated_rk900_down_name"] = "BR 364 ozeanblau/beige [gedreht] [RK900 unten] (1987)",
-        ["364_or_rotated_rk900_down_name"] = "BR 364 orientrot [gedreht] [RK900 unten] (1987)",
-        ["364_ob_dbag_rotated_rk900_down_name"] = "BR 364 ozeanblau/beige DBAG [gedreht] [RK900 unten] (1994)",
-        ["364_or_dbag_rotated_rk900_down_name"] = "BR 364 orientrot DBAG [gedreht] [RK900 unten] (1994)",
-        ["364_vr_rotated_rk900_down_name"] = "BR 364 verkehrsrot DBAG [gedreht] [RK900 unten] (1996)",
+		["br193_ac_mrce_name"] = 		"BR 193 874 AC MRCE",
+		["br193_ac_mrce2_name"] = 		"BR 193 603 AC MRCE",
+		["br193_ac_mrce3_name"] = 		"BR 193 852 AC MRCE",
+		["br193_ac_mrce4_name"] = 		"BR 193 864 AC MRCE",
 
-        -- 365 (schwer+Funk)
-        ["365_ob_name"] = "BR 365 ozeanblau/beige (1987)",
-        ["365_or_name"] = "BR 365 orientrot (1987)",
-        ["365_ob_dbag_name"] = "BR 365 ozeanblau/beige DBAG (1994)",
-        ["365_or_dbag_name"] = "BR 365 orientrot DBAG (1997)",
-        ["365_vr_cargo_name"] = "BR 365 verkehrsrot DB Cargo (2005)",
-        ["365_desc"] = "Ab 1987 wurden erste Loks mit einer Funkfernsteuerung ausgerüstet, wodurch die jeweilige Baureihe um 4 Stellen \"erhöht\" wurde: Aus der BR 361 enstand so die BR 365.",
+		["br193_ac_nrail_name"] = 		"BR 193 922 AC Northrail",
 
-        ["365_ob_rotated_name"] = "BR 365 ozeanblau/beige [gedreht] (1987)",
-        ["365_or_rotated_name"] = "BR 365 orientrot [gedreht] (1987)",
-        ["365_ob_dbag_rotated_name"] = "BR 365 ozeanblau/beige DBAG [gedreht] (1994)",
-        ["365_or_dbag_rotated_name"] = "BR 365 orientrot DBAG [gedreht] (1997)",
-        ["365_vr_cargo_rotated_name"] = "BR 365 verkehrsrot DB Cargo [gedreht] (2005)",
+		["br193_ac_retrack_name"] = 	"BR 193 815 AC Retrack (Kätchen)",
+		["br193_ac_retrack2_name"] = 	"BR 193 811 AC Retrack (Jule)",
+		["br193_ac_retrack3_name"] = 	"BR 193 872 AC Retrack (Transpetrol)",
 
-        ["365_ob_rk900_name"] = "BR 365 ozeanblau/beige [RK900 oben] (1987)",
-        ["365_or_rk900_name"] = "BR 365 orientrot [RK900 oben] (1987)",
-        ["365_ob_dbag_rk900_name"] = "BR 365 ozeanblau/beige DBAG [RK900 oben] (1994)",
-        ["365_or_dbag_rk900_name"] = "BR 365 orientrot DBAG [RK900 oben] (1997)",
-        ["365_vr_cargo_rk900_name"] = "BR 365 verkehrsrot DB Cargo [RK900 oben] (2005)",
+		["br193_ac_rpool_name"] = 		"BR 193 802 AC Railpool Regio Bayern",
+		["br193_ac_rpool2_name"] = 		"BR 193 994 AC Railpool",
+		["br193_ac_rpool3_name"] = 		"BR 193 813 AC Railpool",
+		["br193_ac_rpool4_name"] = 		"BR 193 813 AC Railpool (Knorrbremse)",
+		["br193_ac_rpool5_name"] = 		"BR 193 804 AC Railpool",
 
-        ["365_ob_rk900_down_name"] = "BR 365 ozeanblau/beige [RK900 unten] (1987)",
-        ["365_or_rk900_down_name"] = "BR 365 orientrot [RK900 unten] (1987)",
-        ["365_ob_dbag_rk900_down_name"] = "BR 365 ozeanblau/beige DBAG [RK900 unten] (1994)",
-        ["365_or_dbag_rk900_down_name"] = "BR 365 orientrot DBAG [RK900 unten] (1997)",
-        ["365_vr_cargo_rk900_down_name"] = "BR 365 verkehrsrot DB Cargo [RK900 unten] (2005)",
+		["br193_ac_setg_name"] = 		"BR 193 218 AC SETG (Beethoven 15 Jahre SETG)",
+		["br193_ac_setg2_name"] = 		"BR 193 218 AC SETG (Beethoven 20 Jahre SETG)",
+		["br193_ac_setg3_name"] = 		"BR 193 218 AC SETG (Stille Nacht Heilige Nacht)",
+		["br193_ac_setg4_name"] = 		"BR 193 812 AC SETG (weiß)",
+		["br193_ac_setg5_name"] = 		"BR 193 204 AC SETG (Mozart)",
+		["br193_ac_setg6_name"] = 		"BR 193 831 AC SETG (Christian Doppler)",
 
-        ["365_ob_rotated_rk900_name"] = "BR 365 ozeanblau/beige [gedreht] [RK900 oben] (1987)",
-        ["365_or_rotated_rk900_name"] = "BR 365 orientrot [gedreht] [RK900 oben] (1987)",
-        ["365_ob_dbag_rotated_rk900_name"] = "BR 365 ozeanblau/beige DBAG [gedreht] [RK900 oben] (1994)",
-        ["365_or_dbag_rotated_rk900_name"] = "BR 365 orientrot DBAG [gedreht] [RK900 oben] (1997)",
-        ["365_vr_cargo_rotated_rk900_name"] = "BR 365 verkehrsrot DB Cargo [gedreht] [RK900 oben] (2005)",
+		--- Smartron ---
 
-        ["365_ob_rotated_rk900_down_name"] = "BR 365 ozeanblau/beige [gedreht] [RK900 unten] (1987)",
-        ["365_or_rotated_rk900_down_name"] = "BR 365 orientrot [gedreht] [RK900 unten] (1987)",
-        ["365_ob_dbag_rotated_rk900_down_name"] = "BR 365 ozeanblau/beige DBAG [gedreht] [RK900 unten] (1994)",
-        ["365_or_dbag_rotated_rk900_down_name"] = "BR 365 orientrot DBAG [gedreht] [RK900 unten] (1997)",
-        ["365_vr_cargo_rotated_rk900_down_name"] = "BR 365 verkehrsrot DB Cargo [gedreht] [RK900 unten] (2005)",
+		["br192_sm_siemens_name"] = 	"BR 192 001 Siemens",
 
-        -- Post
-        ["v60_post_ar_name"] = "V 60 Post Lok 3 (1956)",
-        ["v60_post_ob_name"] = "V 60 Post Lok 4 (1976)",
+		["br192_sm_bbl_name"] = 		"BR 192 008 BBL Logistik",
 
-        ["v60_post_ar_rotated_name"] = "V 60 Post Lok 3 [gedreht] (1956)",
-        ["v60_post_ob_rotated_name"] = "V 60 Post Lok 4 [gedreht] (1976)",
+		["br192_sm_evb_name"] = 		"BR 192 005 EVB",
+		["br192_sm_evb2_name"] = 		"BR 192 076 EVB (Black Forest Terminal)",
 
-        -- Assets
-        ["V 60 Asset Set"] = "V 60 Asset Set",
-        ["V 60 gedreht Asset Set"] = "V 60 gedreht Asset Set",
-        ["V 60 mit RK900 unten Asset Set"] = "V 60 mit RK900 unten Asset Set",
-        ["V 60 mit RK900 oben Asset Set" ] = "V 60 mit RK900 oben Asset Set",
-        ["Statische V 60, BR 260, 261, 360, 361, 362, 363, 364, 365"] = "Statische V 60, BR 260, 261, 360, 361, 362, 363, 364, 365",
-        ["Statische V60 mit RK900."] = "Statische V 60 mit Rangierkupplung RK900.",
-        ["V 60 mit RK 900 als Asset"] = "V 60 mit RK 900 als Asset",
-        ["V 60 als Asset"] = "V 60 als Asset",
-        ["V 60 gedreht als Asset"] = "V 60 gedreht als Asset",
-        ["V 60"] = "V 60",
+		["br192_sm_nrail_name"] = 		"BR 192 017 Northrail",
+		["br192_sm_nrail2_name"] = 		"BR 192 015 Northrail/ RTB Cargo",
+
+		["br192_sm_rhc_name"] = 		"BR 192 045 Rhein Cargo",
+
+		["br192_sm_pimk_name"] = 		"BR 192 962 Pimk Rail",
+
+		--- DC ---
+
+		["br193_dc_siemens_name"] = 	"BR 170 020 Siemens",
+
+		["br193_dc_db_name"] = 			"BR 170 021 DB Cargo (Polen)",
+
+		["br193_dc_db2_name"] = 		"BR 191 013 DB Schenker (Italien)",
+
+		["br193_dc_mrce_name"] = 		"BR 191 022 MRCE (Italien)",
+
+
+        -- Vorspann
+        ["Vorspann_br193"] = "Vorspann-Loks aktivieren?",
+        ["option_vorspann_br193_desc"] = "Sollen die Vorspann-Loks (mit vorderem Panto gehoben) aktiviert werden?",
+
+		["br193_ac_siemens_name_vorspann"] = 	"Vorspann - BR 192 961 AC Siemens",
+		["br193_ac_siemens2_name_vorspann"] = 	"Vorspann - BR 193 780 AC Siemens Vectron 230 km/h",
+
+		["br193_ac_dsb_name_vorspann"] = 		"Vorspann - EB 3202 AC DSB",
+		["br193_ac_dsb2_name_vorspann"] = 		"Vorspann - EB 3240 AC DSB Vectron Nr. 1000",
+
+		["br193_ac_ell_name_vorspann"] = 		"Vorspann - BR 193 208 AC ELL",
+		["br193_ac_ell2_name_vorspann"] = 		"Vorspann - BR 193 208 AC ELL/Rurtalbahn Cargo",
+		["br193_ac_ell3_name_vorspann"] = 		"Vorspann - BR 193 208 AC ELL/Eccorail",
+		["br193_ac_ell4_name_vorspann"] = 		"Vorspann - BR 193 247 AC ELL (Farbe weiß)",
+
+		["br193_ac_flix_name_vorspann"] = 		"Vorspann - BR 243 002 AC Flixtrain/Hectorrail",
+		["br193_ac_flix2_name_vorspann"] = 		"Vorspann - BR 193 813 AC Flixtrain",
+		["br193_ac_flix3_name_vorspann"] = 		"Vorspann - BR 193 861 AC Flixtrain",
+
+		["br193_ac_mrce_name_vorspann"] = 		"Vorspann - BR 193 874 AC MRCE",
+		["br193_ac_mrce2_name_vorspann"] = 		"Vorspann - BR 193 603 AC MRCE",
+		["br193_ac_mrce3_name_vorspann"] = 		"Vorspann - BR 193 852 AC MRCE",
+		["br193_ac_mrce4_name_vorspann"] = 		"Vorspann - BR 193 864 AC MRCE",
+
+		["br193_ac_nrail_name_vorspann"] = 		"Vorspann - BR 193 922 AC Northrail",
+
+		["br193_ac_retrack_name_vorspann"] = 	"Vorspann - BR 193 815 AC Retrack (Kätchen)",
+		["br193_ac_retrack2_name_vorspann"] = 	"Vorspann - BR 193 811 AC Retrack (Jule)",
+		["br193_ac_retrack3_name_vorspann"] = 	"Vorspann - BR 193 872 AC Retrack (Transpetrol)",
+
+		["br193_ac_rpool_name_vorspann"] = 		"Vorspann - BR 193 802 AC Railpool Regio Bayern",
+		["br193_ac_rpool2_name_vorspann"] = 	"Vorspann - BR 193 994 AC Railpool",
+		["br193_ac_rpool3_name_vorspann"] = 	"Vorspann - BR 193 813 AC Railpool",
+		["br193_ac_rpool4_name_vorspann"] = 	"Vorspann - BR 193 813 AC Railpool (Knorrbremse)",
+		["br193_ac_rpool5_name_vorspann"] = 	"Vorspann - BR 193 804 AC Railpool",
+
+		["br193_ac_setg_name_vorspann"] = 		"Vorspann - BR 193 218 AC SETG (Beethoven 15 Jahre SETG)",
+		["br193_ac_setg2_name_vorspann"] = 		"Vorspann - BR 193 218 AC SETG (Beethoven 20 Jahre SETG)",
+		["br193_ac_setg3_name_vorspann"] = 		"Vorspann - BR 193 218 AC SETG (Stille Nacht Heilige Nacht)",
+		["br193_ac_setg4_name_vorspann"] = 		"Vorspann - BR 193 812 AC SETG (weiß)",
+		["br193_ac_setg5_name_vorspann"] = 		"Vorspann - BR 193 204 AC SETG (Mozart)",
+		["br193_ac_setg6_name_vorspann"] = 		"Vorspann - BR 193 831 AC SETG (Christian Doppler)",
+
+		--- Smartron ---
+
+		["br192_sm_siemens_name_vorspann"] = 	"Vorspann - BR 192 001 Siemens",
+
+		["br192_sm_bbl_name_vorspann"] = 		"Vorspann - BR 192 008 BBL Logistik",
+
+		["br192_sm_evb_name_vorspann"] = 		"Vorspann - BR 192 005 EVB",
+		["br192_sm_evb2_name_vorspann"] = 		"Vorspann - BR 192 076 EVB (Black Forest Terminal)",
+
+		["br192_sm_nrail_name_vorspann"] = 		"Vorspann - BR 192 017 Northrail",
+		["br192_sm_nrail2_name_vorspann"] = 	"Vorspann - BR 192 015 Northrail/ RTB Cargo",
+
+		["br192_sm_rhc_name_vorspann"] = 		"Vorspann - BR 192 045 Rhein Cargo",
+
+
+		--- DC ---
+
+		["br193_dc_siemens_name_vorspann"] = 	"Vorspann - BR 170 020 Siemens",
+
+		["br193_dc_db_name_vorspann"] = 		"Vorspann - BR 170 021 DB Cargo (Polen)",
+
+		["br193_dc_db2_name_vorspann"] = 		"Vorspann - BR 191 013 DB Schenker (Italien)",
+
+		["br193_dc_mrce_name_vorspann"] = 		"Vorspann - BR 191 022 MRCE (Italien)",
 
         -- Fake
-        ["Fake_v60"] = "Fakeversionen aktivieren?",
-        ["option_fake_v60_desc"] = "Sollen die Fakeversionen von allen Loks im Spiel verfügbar sein?",
-	}
+        ["Fake_br193"] = "Fake-Loks aktivieren?",
+        ["option_fake_br193_desc"] = "Sollen die Fake-Loks (Pantos unten, kein Licht, kein Fahrer) aktiviert werden?",
+
+		["br193_ms_siemens_name_fake"] = 	"Fake - BR 193 901 MS Siemens",
+		["br193_ms_siemens2_name_fake"] = 	"Fake - BR 6193 400 MS Siemens (Vectron 230 km/h)",
+		["br193_ms_siemens3_name_fake"] = 	"Fake - BR 193 844 MS Siemens (Creating Corridors)",
+
+		["br193_ms_akiem_name_fake"] = 		"Fake - BR 193 888 MS Akiem (ohne Italien)",
+		["br193_ms_akiem2_name_fake"] = 	"Fake - BR 193 890 MS Akiem (Ecco Rail)",
+
+		["br193_ms_alpha_name_fake"] = 		"Fake - BR 193 403 MS Alpha Trains (mit Italien)",
+		["br193_ms_alpha2_name_fake"] = 	"Fake - BR 193 588 MS Alpha Trains (ohne Italien)",
+		["br193_ms_alpha3_name_fake"] = 	"Fake - BR 193 586 MS Alpha Trains (CD Cargo)",
+		["br193_ms_alpha4_name_fake"] = 	"Fake - BR 193 405 MS Alpha Trains (Green Cargo)",
+		["br193_ms_alpha5_name_fake"] = 	"Fake - BR 193 587 MS Alpha Trains (CD Cargo)",
+
+		["br193_ms_bls_name_fake"] = 		"Fake - BR 193 494 MS BLS Cargo (Alpinisten)",
+		["br193_ms_bls2_name_fake"] = 		"Fake - BR 475 402 MS BLS Cargo (Alpinisten)",
+		["br193_ms_bls3_name_fake"] = 		"Fake - BR 475 422 MS BLS Cargo (The New Alpinist",
+		["br193_ms_bls4_name_fake"] = 		"Fake - BR 475 416 MS BLS Cargo (ohne Folierung)",
+
+		["br193_ms_boxx_name_fake"] = 		"Fake - BR 193 833 MS BoxXpress.de",
+		["br193_ms_boxx2_name_fake"] = 		"Fake - BR 6193 117 MS BoxXpress.eu",
+
+		["br193_ms_captrain_name_fake"] = 	"Fake - BR 193 892 MS Captrain (Jerome)",
+
+		["br193_ms_cu_name_fake"] = 		"Fake - BR 370 052 MS Cargounit",
+		["br193_ms_cu2_name_fake"] = 		"Fake - BR 370 051 MS Cargounit/CD Cargo",
+
+		["br193_ms_db_name_fake"] = 		"Fake - BR 193 302 MS DB (mit Italien)",
+		["br193_ms_db2_name_fake"] = 		"Fake - BR 193 394 MS DB (Schienenbrücke Ukraine)",
+		["br193_ms_db3_name_fake"] = 		"Fake - BR 193 371 MS DB (ohne Italien)",
+		["br193_ms_db4_name_fake"] = 		"Fake - BR 193 388 MS DB (#DBCargofährt)",
+		["br193_ms_db5_name_fake"] = 		"Fake - BR 193 560 MS DB (Güter gehören auf die Schiene)",
+		["br193_ms_db6_name_fake"] = 		"Fake - BR 193 360 MS DB (I am European)",
+		["br193_ms_db7_name_fake"] = 		"Fake - BR 193 363 MS DB (I am a Climate Hero)",
+		["br193_ms_db8_name_fake"] = 		"Fake - BR 193 312 MS DB (Das ist Grün Offenburg)",
+		["br193_ms_db9_name_fake"] = 		"Fake - BR 193 357 MS DB (Das ist Grün Saarbrücken)",
+		["br193_ms_db10_name_fake"] = 		"Fake - BR 193 361 MS DB (Das ist Grün Senftenberg)",
+
+		["br193_ms_hupac_name_fake"] = 		"Fake - BR 193 492 MS Hupac",
+		["br193_ms_hupac2_name_fake"] = 	"Fake - BR 193 493 MS Hupac/WRS",
+
+		["br193_ms_ell_name_fake"] = 		"Fake - BR 193 214 MS ELL (ohne Italien)",
+		["br193_ms_ell2_name_fake"] = 		"Fake - BR 193 299 MS ELL (mit Italien)",
+		["br193_ms_ell3_name_fake"] = 		"Fake - BR 193 756 MS ELL (Vectron #750)",
+		["br193_ms_ell4_name_fake"] = 		"Fake - BR 193 759 MS ELL (NS Niederlande)",
+		["br193_ms_ell5_name_fake"] = 		"Fake - BR 193 692 MS ELL (Nightjet)",
+		["br193_ms_ell6_name_fake"] = 		"Fake - BR 193 293 MS ELL (Ceske Drahy)",
+		["br193_ms_ell7_name_fake"] = 		"Fake - BR 383 003 MS CD Cargo",
+
+		["br193_ms_lomo_name_fake"] = 		"Fake - BR 193 772 MS Lokomotion (Streifen blau)",
+		["br193_ms_lomo2_name_fake"] = 		"Fake - BR 193 777 MS Lokomotion (beige)",
+		["br193_ms_lomo3_name_fake"] = 		"Fake - BR 193 776 MS Lokomotion (Streifen rot)",
+		["br193_ms_lomo4_name_fake"] = 		"Fake - BR 193 774 MS Lokomotion (20 Years)",
+		["br193_ms_lomo5_name_fake"] = 		"Fake - BR 193 664 MS Lokomotion (MRCE)",
+
+		["br193_ms_mrce_name_fake"] = 		"Fake - BR 193 661 MS MRCE",
+		["br193_ms_mrce2_name_fake"] = 		"Fake - BR 193 639 MS BEACON",
+		["br193_ms_mrce3_name_fake"] = 		"Fake - BR 193 706 MS MRCE (Mercitalia)",
+		["br193_ms_mrce4_name_fake"] = 		"Fake - BR 193 639 MS BEACON (Mercitalia)",
+
+		["br193_ms_obb_name_fake"] = 		"Fake - Rh 1293 001 MS ÖBB",
+
+		["br193_ms_rpool_name_fake"] = 		"Fake - BR 6193 093 MS Railpool (ohne Italien)",
+		["br193_ms_rpool2_name_fake"] = 	"Fake - BR 6193 112 MS Railpool (mit Italien)",
+
+		["br193_ms_pkp_name_fake"] = 		"Fake - BR 370 056 MS PKP Cargo (Dach neongrün)",
+		["br193_ms_pkp2_name_fake"] = 		"Fake - BR 370 027 MS PKP Cargo (Dach rot)",
+		["br193_ms_pkp3_name_fake"] = 		"Fake - BR 370 022 MS PKP Cargo (Dach blau)",
+		["br193_ms_pkp4_name_fake"] = 		"Fake - BR 383 053 MS PKP Cargo (Unitcredit) ",
+
+		["br193_ms_setg_name_fake"] = 		"Fake - BR 193 839 MS SETG (Alpenlok)",
+		["br193_ms_setg2_name_fake"] = 		"Fake - BR 193 821 MS SETG (Daniel)",
+		["br193_ms_setg3_name_fake"] = 		"Fake - BR 193 746 MS SETG (Jeder Mann)",
+		["br193_ms_setg4_name_fake"] = 		"Fake - BR 193 691 MS SETG (Die Waffen nieder)",
+		["br193_ms_setg5_name_fake"] = 		"Fake - BR 193 736 MS SETG (Marco Polo)",
+		["br193_ms_setg6_name_fake"] = 		"Fake - BR 193 692 MS SETG (Wood Works)",
+
+		--- AC ---
+
+		["br193_ac_siemens_name_fake"] = 	"Fake - BR 192 961 AC Siemens",
+		["br193_ac_siemens2_name_fake"] = 	"Fake - BR 193 780 AC Siemens Vectron 230km/h",
+
+		["br193_ac_dsb_name_fake"] = 		"Fake - EB 3202 AC DSB",
+		["br193_ac_dsb2_name_fake"] = 		"Fake - EB 3240 AC DSB Vectron Nr. 1000",
+
+		["br193_ac_ell_name_fake"] = 		"Fake - BR 193 208 AC ELL",
+		["br193_ac_ell2_name_fake"] = 		"Fake - BR 193 208 AC ELL/Rurtalbahn Cargo",
+		["br193_ac_ell3_name_fake"] = 		"Fake - BR 193 208 AC ELL/Eccorail",
+		["br193_ac_ell4_name_fake"] = 		"Fake - BR 193 247 AC ELL (Farbe weiß)",
+
+		["br193_ac_flix_name_fake"] = 		"Fake - BR 243 002 AC Flixtrain/Hectorrail",
+		["br193_ac_flix2_name_fake"] = 		"Fake - BR 193 813 AC Flixtrain",
+		["br193_ac_flix3_name_fake"] = 		"Fake - BR 193 861 AC Flixtrain",
+
+		["br193_ac_mrce_name_fake"] = 		"Fake - BR 193 874 AC MRCE",
+		["br193_ac_mrce2_name_fake"] = 		"Fake - BR 193 603 AC MRCE",
+		["br193_ac_mrce3_name_fake"] = 		"Fake - BR 193 852 AC MRCE",
+		["br193_ac_mrce4_name_fake"] = 		"Fake - BR 193 864 AC MRCE",
+
+		["br193_ac_nrail_name_fake"] = 		"Fake - BR 193 922 AC Northrail",
+
+		["br193_ac_retrack_name_fake"] = 	"Fake - BR 193 815 AC Retrack (Kätchen)",
+		["br193_ac_retrack2_name_fake"] = 	"Fake - BR 193 811 AC Retrack (Jule)",
+		["br193_ac_retrack3_name_fake"] = 	"Fake - BR 193 872 AC Retrack (Transpetrol)",
+
+		["br193_ac_rpool_name_fake"] = 		"Fake - BR 193 802 AC Railpool Regio Bayern",
+		["br193_ac_rpool2_name_fake"] = 	"Fake - BR 193 994 AC Railpool",
+		["br193_ac_rpool3_name_fake"] = 	"Fake - BR 193 813 AC Railpool",
+		["br193_ac_rpool4_name_fake"] = 	"Fake - BR 193 813 AC Railpool (Knorrbremse)",
+		["br193_ac_rpool5_name_fake"] = 	"Fake - BR 193 804 AC Railpool",
+
+		["br193_ac_setg_name_fake"] = 		"Fake - BR 193 218 AC SETG (Beethoven 15 Jahre SETG)",
+		["br193_ac_setg2_name_fake"] = 		"Fake - BR 193 218 AC SETG (Beethoven 20 Jahre SETG)",
+		["br193_ac_setg3_name_fake"] = 		"Fake - BR 193 218 AC SETG (Stille Nacht Heilige Nacht)",
+		["br193_ac_setg4_name_fake"] = 		"Fake - BR 193 812 AC SETG (weiß)",
+		["br193_ac_setg5_name_fake"] = 		"Fake - BR 193 204 AC SETG (Mozart)",
+		["br193_ac_setg6_name_fake"] = 		"Fake - BR 193 831 AC SETG (Christian Doppler)",
+
+		--- Smartron ---
+
+		["br192_sm_siemens_name_fake"] = 	"Fake - BR 192 001 Siemens",
+
+		["br192_sm_bbl_name_fake"] = 		"Fake - BR 192 008 BBL Logistik",
+
+		["br192_sm_evb_name_fake"] = 		"Fake - BR 192 005 EVB",
+		["br192_sm_evb2_name_fake"] = 		"Fake - BR 192 076 EVB (Black Forest Terminal)",
+
+		["br192_sm_nrail_name_fake"] = 		"Fake - BR 192 017 Northrail",
+		["br192_sm_nrail2_name_fake"] = 	"Fake - BR 192 015 Northrail/ RTB Cargo",
+
+		["br192_sm_rhc_name_fake"] = 		"Fake - BR 192 045 Rhein Cargo",
+
+
+		--- DC ---
+
+		["br193_dc_siemens_name_fake"] = 	"Fake - BR 170 020 Siemens",
+
+		["br193_dc_db_name_fake"] = 		"Fake - BR 170 021 DB Cargo (Polen)",
+
+		["br193_dc_db2_name_fake"] = 		"Fake - BR 191 013 DB Schenker (Italien)",
+
+		["br193_dc_mrce_name_fake"] = 		"Fake - BR 191 022 MRCE (Italien)",
+
+	},
 }
 end
