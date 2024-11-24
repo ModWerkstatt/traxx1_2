@@ -1,0 +1,36 @@
+function data()
+return {
+	order = 0,
+	params = {
+        alpha_scale = {
+			alphaScale = 1,
+		},
+		fade_out_range = {
+			fadeOutEndDist = 20000,
+			fadeOutStartDist = 10000,
+		},
+		map_albedo_opacity = {
+			fileName = "models/vehicle/train/traxx1/glas_albedo_opacity.dds",
+			type = "TWOD",
+			wrapS = "REPEAT",
+			wrapT = "REPEAT",
+		},
+		map_metal_gloss_ao = {
+			fileName = "models/vehicle/train/traxx1/glas_metal_gloss_ao.dds",
+			type = "TWOD",
+			wrapS = "REPEAT",
+			wrapT = "REPEAT",
+		},
+		polygon_offset = {
+			factor = -1,
+			forceDepthWrite = false,
+			units = -1,
+		},
+		two_sided = {
+			flipNormal = true,
+			twoSided = false,
+		},
+	},
+	type = "PHYS_TRANSPARENT",
+}
+end
