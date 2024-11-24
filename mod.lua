@@ -18,31 +18,45 @@ return {
 		url = { "" },
         params = {
 			{
-				key = "br185_vorspann",
-				name = _("Vorspann_br185"),
+				key = "traxx1_vorspann",
+				name = _("Vorspann_traxx1"),
 				values = { "No", "Yes", },
-				tooltip = _("option_vorspann_br185_desc"),
+				tooltip = _("option_vorspann_traxx1_desc"),
 				defaultIndex = 0,
 			},
 			{
-				key = "br185_fake",
-				name = _("Fake_br185"),
+				key = "traxx1_fake",
+				name = _("Fake_traxx1"),
 				values = { "No", "Yes", },
-				tooltip = _("option_fake_br185_desc"),
+				tooltip = _("option_fake_traxx1_desc"),
 				defaultIndex = 0,
 			},
 			{
-				key = "br185_ch",
-				name = _("ch_br185"),
+				key = "traxx1_pz",
+				name = _("ch_traxx1"),
 				values = { "No", "Yes", },
-				tooltip = _("option_ch_br185_desc"),				
+				tooltip = _("option_pz_traxx1_desc"),				
 				defaultIndex = 1,
 			},
 			{
-				key = "br185_privat",
-				name = _("privat_br185"),
+				key = "traxx1_gz",
+				name = _("ch_traxx1"),
 				values = { "No", "Yes", },
-				tooltip = _("option_privat_br185_desc"),				
+				tooltip = _("option_gz_traxx1_desc"),				
+				defaultIndex = 1,
+			},
+			{
+				key = "traxx1_ch",
+				name = _("ch_traxx1"),
+				values = { "No", "Yes", },
+				tooltip = _("option_ch_traxx1_desc"),				
+				defaultIndex = 1,
+			},
+			{
+				key = "traxx1_privat",
+				name = _("privat_traxx1"),
+				values = { "No", "Yes", },
+				tooltip = _("option_privat_traxx1_desc"),				
 				defaultIndex = 1,
 			},
         },
@@ -69,6 +83,22 @@ return {
 			return data
 		end 
 		
+		local pzFilter = function(fileName, data)		
+			if data.metadata.transportVehicle and data.metadata.traxx1 and data.metadata.traxx1.pz == true then		
+				data.metadata.availability.yearFrom = 1
+				data.metadata.availability.yearTo = 2				
+			end				
+			return data
+		end 
+		
+		local gzFilter = function(fileName, data)		
+			if data.metadata.transportVehicle and data.metadata.traxx1 and data.metadata.traxx1.gz == true then		
+				data.metadata.availability.yearFrom = 1
+				data.metadata.availability.yearTo = 2				
+			end				
+			return data
+		end 
+		
 		local chFilter = function(fileName, data)		
 			if data.metadata.transportVehicle and data.metadata.traxx1 and data.metadata.traxx1.ch == true then			
 				data.metadata.availability.yearFrom = 1
@@ -80,23 +110,31 @@ return {
 		
 		if modParams[getCurrentModId()] ~= nil then
 			local params = modParams[getCurrentModId()]					
-			if params["br185_vorspann"] == 0 then				
+			if params["traxx1_vorspann"] == 0 then				
 				--addFileFilter("model/transportVehicle", vorspannFilter)	
 				addModifier("loadModel", vorspannFilter)
 			end
-			if params["br185_fake"] == 0 then				
+			if params["traxx1_fake"] == 0 then				
 				addModifier("loadModel", fakeFilter)
 			end
-			if params["br185_ch"] == 0 then				
+			if params["traxx1_pz"] == 0 then				
+				addModifier("loadModel", pzFilter)
+			end
+			if params["traxx1_gz"] == 0 then				
+				addModifier("loadModel", gzFilter)
+			end
+			if params["traxx1_ch"] == 0 then				
 				addModifier("loadModel", chFilter)
 			end
-			if params["br185_privat"] == 0 then				
+			if params["traxx1_privat"] == 0 then				
 				addModifier("loadModel", acFilter)
 			end
 			
 		else
 			--addFileFilter("model/transportVehicle", vorspannFilter)			
-			addModifier("loadModel", fakeFilter)
+			addModifier("loadModel", fakeFilter)		
+			addModifier("loadModel", pzFilter)		
+			addModifier("loadModel", gzFilter)
 			addModifier("loadModel", chFilter)
 			addModifier("loadModel", privatFilter)
 		end			

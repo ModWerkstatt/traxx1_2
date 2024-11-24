@@ -721,7 +721,7 @@ return {
 		},
 		description = {
 			name = _("br185_db2_name"),
-			description = _("br185_desc"),
+			description = _("br185_desc") .. _("br185_ch"),
 		},
 		emission = {
 			idleEmission = -1,
@@ -780,7 +780,7 @@ return {
             carrier = "RAIL",
 			multipleUnitOnly = false,
             reversible = true,
-            groupFileName = "vehicle/train/br185/menu_br85.mdl",
+            groupFileName = "vehicle/train/traxx1/menu_br185.mdl",
         },
 		seatProvider = {
             crewModels = { "characters/era_c_driver_rail.mdl" },
@@ -805,7 +805,9 @@ return {
 		traxx1 = {
 			vorspann = false,
 			fake = false,
-			ch = false,
+			pz = false,
+			gz = false,
+			ch = true,
 			privat = false,
 		},
 	},

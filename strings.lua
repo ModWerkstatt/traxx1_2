@@ -66,12 +66,22 @@ return {
 		["br185"] = 	"BR 185 mit 2 Stromabnehmern",
 		["br146_zza"] = "BR 146 mit 2 Stromabnehmern und Zugzielanzeiger",
 
+		["pz_br185"] = "Traxx 1 für Personenverkehr",
+		["option_pz_br185_desc"] = "Sollen die Traxx 1 für den Personenverkehr aktiviert werden?",
+		
+		["gz_br185"] = "Traxx 1 für Güterzugverkehr",
+		["option_gz_br185_desc"] = "Sollen die Traxx 1 für den Güterverkehr aktiviert werden?",
+		
 		["ch_br185"] = "Traxx 1 mit 4 Stromabnhemer für Schweiz, Frankreich und Luxemburg",
-		["option_ms_br185_desc"] = "Sollen die Traxx für Schweiz, Frankreich und Luxemburg System aktiviert werden?",
+		["option_ms_br185_desc"] = "Sollen die Traxx 1 für Schweiz, Frankreich und Luxemburg System aktiviert werden?",
 		
 		["privat_br185"] = "Privatbahn Traxx 1 aktivieren?",
 		["option_privat_br185_desc"] = "Sollen die Traxx 1 für Privatbahnen aktiviert werden?",
 				
+		--- 185 001 bis 084 DB
+		--- 185 085 bis 149 DB/CH
+		--- 185 150 bis 200 DB
+
 
 		["br185_db_name"] = 	"BR 185 139 DB AG (2007)",
 		["br185_db2_name"] = 	"BR 185 106 DB AG (2003)",
