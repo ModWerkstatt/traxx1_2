@@ -70,7 +70,7 @@ return {
 			            transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 5.1999998092651, 0, 0, 1, },
                     },
 					{
-						materials = { "vehicle/train/traxx1/rumpf.mtl", },
+						materials = { "vehicle/train/traxx1/rumpf_br185_db.mtl", },
 						mesh = "vehicle/train/traxx1/rumpf_lod0.msh",
 						name = "rumpf",
 						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, -0.041123498231173, 1, },
