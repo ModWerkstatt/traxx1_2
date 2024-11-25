@@ -703,7 +703,7 @@ return {
 		},
 		description = {
 			name = _("br185_db3_name"),
-			description = _("br185_desc") .. _("br185_ch"),
+			description = _("br185_desc") .. _("br185"),
 		},
 		emission = {
 			idleEmission = -1,
@@ -788,8 +788,8 @@ return {
 			vorspann = false,
 			fake = false,
 			pz = false,
-			gz = false,
-			ch = true,
+			gz = true,
+			ch = false,
 			privat = false,
 		},
 	},

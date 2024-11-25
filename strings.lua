@@ -85,7 +85,7 @@ return {
 
 		["br185_db_name"] = 	"BR 185 139 DB AG (2007)",
 		["br185_db2_name"] = 	"BR 185 106 DB AG (2003)",
-		["br185_db3_name"] = 	"BR 185 xxx DB AG (2009)",
+		["br185_db3_name"] = 	"BR 185 018 DB AG (2001)",
 		["br185_db4_name"] = 	"BR 185 xxx DB AG (2009)",
 		
 		

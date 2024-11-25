@@ -806,7 +806,7 @@ return {
 			vorspann = false,
 			fake = false,
 			pz = false,
-			gz = false,
+			gz = true,
 			ch = true,
 			privat = false,
 		},
