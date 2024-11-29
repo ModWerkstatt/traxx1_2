@@ -1,7 +1,7 @@
 ﻿function data()
 return {
 	info = {
-		minorVersion = 1,
+		minorVersion = 0,
 		severityAdd = "NONE",
 		severityRemove = "WARNING",
 		name = _("mod_name"),
@@ -35,28 +35,28 @@ return {
 				key = "traxx1_pz",
 				name = _("ch_traxx1"),
 				values = { "No", "Yes", },
-				tooltip = _("option_pz_traxx1_desc"),				
+				tooltip = _("option_pz_traxx1_desc"),
 				defaultIndex = 1,
 			},
 			{
 				key = "traxx1_gz",
 				name = _("ch_traxx1"),
 				values = { "No", "Yes", },
-				tooltip = _("option_gz_traxx1_desc"),				
+				tooltip = _("option_gz_traxx1_desc"),
 				defaultIndex = 1,
 			},
 			{
 				key = "traxx1_ch",
 				name = _("ch_traxx1"),
 				values = { "No", "Yes", },
-				tooltip = _("option_ch_traxx1_desc"),				
+				tooltip = _("option_ch_traxx1_desc"),
 				defaultIndex = 1,
 			},
 			{
 				key = "traxx1_privat",
 				name = _("privat_traxx1"),
 				values = { "No", "Yes", },
-				tooltip = _("option_privat_traxx1_desc"),				
+				tooltip = _("option_privat_traxx1_desc"),
 				defaultIndex = 1,
 			},
         },
@@ -64,80 +64,80 @@ return {
 	options = {
 	},
 	runFn = function (settings, modParams)
-		
-		local vorspannFilter = function(fileName, data)		
-			if data.metadata.transportVehicle and data.metadata.traxx1 and data.metadata.traxx1.vorspann == true then				
+
+		local vorspannFilter = function(fileName, data)
+			if data.metadata.transportVehicle and data.metadata.traxx1 and data.metadata.traxx1.vorspann == true then
 				data.metadata.availability.yearFrom = 1
 				data.metadata.availability.yearTo = 2
 				--return false
-			end	
+			end
 			--return true
 			return data
-		end 
-		
-		local fakeFilter = function(fileName, data)		
-			if data.metadata.transportVehicle and data.metadata.traxx1 and data.metadata.traxx1.fake == true then		
+		end
+
+		local fakeFilter = function(fileName, data)
+			if data.metadata.transportVehicle and data.metadata.traxx1 and data.metadata.traxx1.fake == true then
 				data.metadata.availability.yearFrom = 1
-				data.metadata.availability.yearTo = 2				
-			end				
+				data.metadata.availability.yearTo = 2
+			end
 			return data
-		end 
-		
-		local pzFilter = function(fileName, data)		
-			if data.metadata.transportVehicle and data.metadata.traxx1 and data.metadata.traxx1.pz == true then		
+		end
+
+		local pzFilter = function(fileName, data)
+			if data.metadata.transportVehicle and data.metadata.traxx1 and data.metadata.traxx1.pz == true then
 				data.metadata.availability.yearFrom = 1
-				data.metadata.availability.yearTo = 2				
-			end				
+				data.metadata.availability.yearTo = 2
+			end
 			return data
-		end 
-		
-		local gzFilter = function(fileName, data)		
-			if data.metadata.transportVehicle and data.metadata.traxx1 and data.metadata.traxx1.gz == true then		
+		end
+
+		local gzFilter = function(fileName, data)
+			if data.metadata.transportVehicle and data.metadata.traxx1 and data.metadata.traxx1.gz == true then
 				data.metadata.availability.yearFrom = 1
-				data.metadata.availability.yearTo = 2				
-			end				
+				data.metadata.availability.yearTo = 2
+			end
 			return data
-		end 
-		
-		local chFilter = function(fileName, data)		
-			if data.metadata.transportVehicle and data.metadata.traxx1 and data.metadata.traxx1.ch == true then			
+		end
+
+		local chFilter = function(fileName, data)
+			if data.metadata.transportVehicle and data.metadata.traxx1 and data.metadata.traxx1.ch == true then
 				data.metadata.availability.yearFrom = 1
-				data.metadata.availability.yearTo = 2				
-			end				
+				data.metadata.availability.yearTo = 2
+			end
 			return data
-		end 
-		
-		
+		end
+
+
 		if modParams[getCurrentModId()] ~= nil then
-			local params = modParams[getCurrentModId()]					
-			if params["traxx1_vorspann"] == 0 then				
-				--addFileFilter("model/transportVehicle", vorspannFilter)	
+			local params = modParams[getCurrentModId()]
+			if params["traxx1_vorspann"] == 0 then
+				--addFileFilter("model/transportVehicle", vorspannFilter)
 				addModifier("loadModel", vorspannFilter)
 			end
-			if params["traxx1_fake"] == 0 then				
+			if params["traxx1_fake"] == 0 then
 				addModifier("loadModel", fakeFilter)
 			end
-			if params["traxx1_pz"] == 0 then				
+			if params["traxx1_pz"] == 0 then
 				addModifier("loadModel", pzFilter)
 			end
-			if params["traxx1_gz"] == 0 then				
+			if params["traxx1_gz"] == 0 then
 				addModifier("loadModel", gzFilter)
 			end
-			if params["traxx1_ch"] == 0 then				
+			if params["traxx1_ch"] == 0 then
 				addModifier("loadModel", chFilter)
 			end
-			if params["traxx1_privat"] == 0 then				
+			if params["traxx1_privat"] == 0 then
 				addModifier("loadModel", acFilter)
 			end
-			
+
 		else
-			--addFileFilter("model/transportVehicle", vorspannFilter)			
-			addModifier("loadModel", fakeFilter)		
-			addModifier("loadModel", pzFilter)		
+			--addFileFilter("model/transportVehicle", vorspannFilter)
+			addModifier("loadModel", fakeFilter)
+			addModifier("loadModel", pzFilter)
 			addModifier("loadModel", gzFilter)
 			addModifier("loadModel", chFilter)
 			addModifier("loadModel", privatFilter)
-		end			
+		end
 	end
 }
 end
