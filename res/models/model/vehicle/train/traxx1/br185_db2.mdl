@@ -663,7 +663,7 @@ return {
 					type = "ELECTRIC",
 				},
 			},
-			soundSet = { name = "traxx1", },
+			soundSet = { name = "br185_1", },
 			topSpeed = 44.4444,
 			weight = 84,
 		},
