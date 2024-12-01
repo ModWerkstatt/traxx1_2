@@ -88,6 +88,7 @@ return {
 		["br185_db3_name"] = 	"BR 185 018 DB AG (2001)",
 		["br185_db4_name"] = 	"BR 185 xxx DB AG (2009)",
 		
+		["br146_db_name"] = 	"BR 146 104 DB AG (2003)",
 		
 		 -- Vorspann
         ["Vorspann_br193"] = "Vorspann-Loks aktivieren?",

@@ -663,8 +663,8 @@ return {
 					type = "ELECTRIC",
 				},
 			},
-			soundSet = { name = "br185_1", },
-			topSpeed = 44.4444,
+			soundSet = { name = "train_diesel", },
+			topSpeed = 38.8889,
 			weight = 84,
 		},
 		transportVehicle = {
