@@ -89,10 +89,18 @@ return {
 		["br185_db4_name"] = 	"BR 185 xxx DB AG (2006)",
 		
 		["br146_db_name"] = 	"BR 146 104 DB AG (2003)",
-		["br146_db_name"] = 	"ME 145-01 Metronom (2003)",
+		["br146_me_name"] = 	"ME 145-01 Metronom (2003)",
 		
 		["br185_atlu_name"] = 	"BR 185 523 Alpha Trains (2003)",
 		["br185_atlu2_name"] = 	"BR 185 535 Alpha Trains (2003)",
+		
+		["br185_bls_name"] = 	"Re 485 001 (2003)",
+		
+		["br185_sbb_name"] = 	"Re 482 xxx (2003)",
+		
+		["br185_mrce_name"] = 	"BR 185 523 MRCE (2003)",
+		["br185_mrce_name"] = 	"BR 185 535 MRCE (2003)",
+		
 		
 		 -- Vorspann
         ["Vorspann_br193"] = "Vorspann-Loks aktivieren?",
