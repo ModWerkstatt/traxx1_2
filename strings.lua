@@ -105,6 +105,7 @@ return {
 		["br185_mrce_name"] = 	"BR 185 551 MRCE (2005)",
 		["br185_mrce2_name"] = 	"BR 185 535 MRCE (2003)",
 		
+		["br185_r4c_name"] = 	"BR 185 550 Rail 4 Chem (2005)",
 		
 		 -- Vorspann
         ["Vorspann_traxx1"] = "Vorspann-Loks aktivieren?",
