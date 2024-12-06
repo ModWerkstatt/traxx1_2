@@ -82,15 +82,19 @@ return {
 		--- 185 085 bis 149 DB/CH
 		--- 185 150 bis 200 DB
 
+		--- BR 146 ---
+		["br146_db_name"] = 	"BR 146 104 DB AG (2003)",
+		["br146_me_name"] = 	"ME 145-01 Metronom (2003)",
 
+		--- BR 185 ---
+		
+		["br185_akiem_name"] = 	"BR 185 555 Akiem (2023)",
+		
 		["br185_db_name"] = 	"BR 185 139 DB AG (2006)",
 		["br185_db2_name"] = 	"BR 185 106 DB AG (2003)",
 		["br185_db3_name"] = 	"BR 185 018 DB AG (2001)",
 		["br185_db4_name"] = 	"BR 185 xxx DB AG (2006)",
-		
-		["br146_db_name"] = 	"BR 146 104 DB AG (2003)",
-		["br146_me_name"] = 	"ME 145-01 Metronom (2003)",
-		
+				
 		["br185_atlu_name"] = 	"BR 185 523 Alpha Trains (2003)",
 		["br185_atlu2_name"] = 	"BR 185 535 Alpha Trains (2003)",
 		
