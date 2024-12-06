@@ -62,7 +62,7 @@ return {
 		["br146_menu_fake"] = "Br 146 AC1 - Fake",
 		["br185_desc"] = "Der ",
 
-		["br185_ch"] = 	"BR 185 mit 4 Stromabnehmern für Schweiz, Frankreich und Luxemburg",
+		["br185_ch"] = 	"BR 185 mit 4 Stromabnehmern für Schweiz, Frankreich oder Luxemburg",
 		["br185"] = 	"BR 185 mit 2 Stromabnehmern",
 		["br146_zza"] = "BR 146 mit 2 Stromabnehmern und Zugzielanzeiger",
 
@@ -72,8 +72,8 @@ return {
 		["gz_br185"] = "Traxx 1 für Güterzugverkehr",
 		["option_gz_br185_desc"] = "Sollen die Traxx 1 für den Güterverkehr aktiviert werden?",
 		
-		["ch_br185"] = "Traxx 1 mit 4 Stromabnhemer für Schweiz, Frankreich und Luxemburg",
-		["option_ms_br185_desc"] = "Sollen die Traxx 1 für Schweiz, Frankreich und Luxemburg System aktiviert werden?",
+		["ch_br185"] = "Traxx 1 mit 4 Stromabnhemer für Schweiz, Frankreich oder Luxemburg",
+		["option_ms_br185_desc"] = "Sollen die Traxx 1 für das Schweiz, Frankreich oder Luxemburg System aktiviert werden?",
 		
 		["privat_br185"] = "Privatbahn Traxx 1 aktivieren?",
 		["option_privat_br185_desc"] = "Sollen die Traxx 1 für Privatbahnen aktiviert werden?",
@@ -98,19 +98,19 @@ return {
 		
 		["br185_sbb_name"] = 	"Re 482 xxx (2003)",
 		
-		["br185_mrce_name"] = 	"BR 185 523 MRCE (2003)",
-		["br185_mrce_name"] = 	"BR 185 535 MRCE (2003)",
+		["br185_mrce_name"] = 	"BR 185 551 MRCE (2005)",
+		["br185_mrce2_name"] = 	"BR 185 535 MRCE (2003)",
 		
 		
 		 -- Vorspann
-        ["Vorspann_br193"] = "Vorspann-Loks aktivieren?",
-        ["option_vorspann_br193_desc"] = "Sollen die Vorspann-Loks (mit vorderem Panto gehoben) aktiviert werden?",
+        ["Vorspann_traxx1"] = "Vorspann-Loks aktivieren?",
+        ["option_vorspann_traxx1_desc"] = "Sollen die Vorspann-Loks (mit vorderem Panto gehoben) aktiviert werden?",
 		
 		
 		
         -- Fake
-        ["Fake_br193"] = "Fake-Loks aktivieren?",
-        ["option_fake_br193_desc"] = "Sollen die Fake-Loks (Pantos unten, kein Licht, kein Fahrer) aktiviert werden?",
+        ["Fake_traxx1"] = "Fake-Loks aktivieren?",
+        ["option_fake_traxx1_desc"] = "Sollen die Fake-Loks (Pantos unten, kein Licht, kein Fahrer) aktiviert werden?",
 		
 		
 
