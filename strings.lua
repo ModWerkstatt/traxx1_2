@@ -96,6 +96,7 @@ return {
 		["br185_bls_name"] = 	"Re 485 001 (2003)",
 		
 		["br185_cap_name"] = 	"BR 185 542 Captrain (2012)",
+		["br185_cap_name"] = 	"BR 185-CL 001 Captrain (2016)",
 		
 		["br185_db_name"] = 	"BR 185 139 DB AG (2006)",
 		["br185_db2_name"] = 	"BR 185 106 DB AG (2003)",
