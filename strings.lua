@@ -56,10 +56,12 @@ return {
 		["mod_name"] = "Bombardier Traxx 1",
 		["mod_desc"] = "Der  ",
 
-		["br185_menu"] = "BR 185 AC1",
-		["br146_menu"] = "Br 146 AC1",
-		["br185_menu_fake"] = "BR 185 AC1 - Fake",
-		["br146_menu_fake"] = "Br 146 AC1 - Fake",
+		["br185_menu"] = "Traxx AC1 F140",
+		["br185_2_menu"] = "Traxx AC1 F140 - 4 Stromabnehmer",
+		["br146_menu"] = "Traxx AC1 P160",
+		["br185_menu_fake"] = "Traxx AC1 F140 - Fake",
+		["br185_2_menu_fake"] = "Traxx AC1 F140 - 4 Stromabnehmer - Fake",
+		["br146_menu_fake"] = "Traxx AC1 P160 - Fake",
 		["br185_desc"] = "Der ",
 
 		["br185_ch"] = 	"BR 185 mit 4 Stromabnehmern für Schweiz, Frankreich oder Luxemburg",

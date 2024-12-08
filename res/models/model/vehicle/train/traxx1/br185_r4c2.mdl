@@ -565,7 +565,7 @@ return {
 			priceScale = 1,
 		},
 		description = {
-			name = _("br185_atlu_name"),
+			name = _("br185_r4c2_name"),
 			description = _("br185_desc") .. _("br185"),
 		},
 		emission = {
