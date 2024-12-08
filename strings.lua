@@ -96,7 +96,7 @@ return {
 		["br185_bls_name"] = 	"Re 485 001 (2003)",
 		
 		["br185_cap_name"] = 	"BR 185 542 Captrain (2012)",
-		["br185_cap_name"] = 	"BR 185-CL 001 Captrain (2016)",
+		["br185_cap2_name"] = 	"BR 185-CL 001 Captrain (2016)",
 		
 		["br185_db_name"] = 	"BR 185 139 DB AG (2006)",
 		["br185_db2_name"] = 	"BR 185 106 DB AG (2003)",
@@ -104,9 +104,10 @@ return {
 		["br185_db4_name"] = 	"BR 185 xxx DB AG (2006)",
 		
 		["br185_mrce_name"] = 	"BR 185 551 MRCE (2005)",
-		["br185_mrce2_name"] = 	"BR 185 535 MRCE (2003)",
+		["br185_mrce2_name"] = 	"BR 185 546 MRCE (2005)",
 		
 		["br185_r4c_name"] = 	"BR 185 550 Rail 4 Chem (2005)",
+		["br185_r4c2_name"] = 	"BR 185-CL 006 Rail 4 Chem (2002)",
 		
 		["br185_sbb_name"] = 	"Re 482 xxx (2003)",
 		
