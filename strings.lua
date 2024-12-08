@@ -89,23 +89,25 @@ return {
 		--- BR 185 ---
 		
 		["br185_akiem_name"] = 	"BR 185 555 Akiem (2023)",
-		
-		["br185_db_name"] = 	"BR 185 139 DB AG (2006)",
-		["br185_db2_name"] = 	"BR 185 106 DB AG (2003)",
-		["br185_db3_name"] = 	"BR 185 018 DB AG (2001)",
-		["br185_db4_name"] = 	"BR 185 xxx DB AG (2006)",
-				
+						
 		["br185_atlu_name"] = 	"BR 185 523 Alpha Trains (2003)",
 		["br185_atlu2_name"] = 	"BR 185 535 Alpha Trains (2003)",
 		
 		["br185_bls_name"] = 	"Re 485 001 (2003)",
 		
-		["br185_sbb_name"] = 	"Re 482 xxx (2003)",
+		["br185_cap_name"] = 	"BR 185 542 Captrain (2012)",
+		
+		["br185_db_name"] = 	"BR 185 139 DB AG (2006)",
+		["br185_db2_name"] = 	"BR 185 106 DB AG (2003)",
+		["br185_db3_name"] = 	"BR 185 018 DB AG (2001)",
+		["br185_db4_name"] = 	"BR 185 xxx DB AG (2006)",
 		
 		["br185_mrce_name"] = 	"BR 185 551 MRCE (2005)",
 		["br185_mrce2_name"] = 	"BR 185 535 MRCE (2003)",
 		
 		["br185_r4c_name"] = 	"BR 185 550 Rail 4 Chem (2005)",
+		
+		["br185_sbb_name"] = 	"Re 482 xxx (2003)",
 		
 		 -- Vorspann
         ["Vorspann_traxx1"] = "Vorspann-Loks aktivieren?",
