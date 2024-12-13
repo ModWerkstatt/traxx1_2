@@ -100,8 +100,10 @@ return {
 		["br185_atlu_name"] = 	"BR 185 523 Alpha Trains (2003)",
 		["br185_atlu2_name"] = 	"BR 185 535 Alpha Trains (2003)",
 		["br185_atlu3_name"] = 	"BR 185 511 Alpha Trains (2007)",
+		["br185_atlu4_name"] = 	"BR 185 525 Alpha Trains (2007)",
 		
 		["br185_bls_name"] = 	"Re 485 001 (2003)",
+		["br185_bls2_name"] = 	"Re 485 010 (2006)",
 		
 		["br185_cap_name"] = 	"BR 185 542 Captrain (2012)",
 		["br185_cap2_name"] = 	"BR 185-CL 001 Captrain (2016)",
