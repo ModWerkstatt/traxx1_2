@@ -77,8 +77,11 @@ return {
 		["ch_br185"] = "Traxx 1 mit 4 Stromabnhemer für Schweiz, Frankreich oder Luxemburg",
 		["option_ms_br185_desc"] = "Sollen die Traxx 1 für das Schweiz, Frankreich oder Luxemburg System aktiviert werden?",
 		
-		["privat_br185"] = "Privatbahn Traxx 1 aktivieren?",
-		["option_privat_br185_desc"] = "Sollen die Traxx 1 für Privatbahnen aktiviert werden?",
+		["db_br185"] = "Traxx 1 der DB aktivieren?",
+		["option_db_br185_desc"] = "Sollen die Traxx 1 für die DB aktiviert werden?",
+		
+		["privat_br185"] = "Traxx 1 von den Privatbahnen aktivieren?",
+		["option_privat_br185_desc"] = "Sollen die Traxx 1 von den Privatbahnen aktiviert werden?",
 				
 		--- 185 001 bis 084 DB
 		--- 185 085 bis 149 DB/CH
@@ -89,6 +92,8 @@ return {
 		["br146_me_name"] = 	"ME 145-01 Metronom (2003)",
 
 		--- BR 185 ---
+		
+		["br185_bombardier_name"] = "BR 185 001 Bombardier - Vorserie (2000)",
 		
 		["br185_akiem_name"] = 	"BR 185 555 Akiem (2023)",
 						
@@ -103,15 +108,18 @@ return {
 		["br185_db_name"] = 	"BR 185 139 DB AG (2006)",
 		["br185_db2_name"] = 	"BR 185 106 DB AG (2003)",
 		["br185_db3_name"] = 	"BR 185 018 DB AG (2001)",
-		["br185_db4_name"] = 	"BR 185 xxx DB AG (2006)",
+		["br185_db4_name"] = 	"BR 185 104 DB AG (2020)",
+		["br185_db5_name"] = 	"BR 185 040 DB AG (2006)",
+		["br185_db6_name"] = 	"BR 185 006 DB AG (2020)",
 		
 		["br185_mrce_name"] = 	"BR 185 551 MRCE (2005)",
 		["br185_mrce2_name"] = 	"BR 185 546 MRCE (2005)",
+		["br185_mrce3_name"] = 	"BR 185 556 MRCE (2009)",
+		["br185_mrce4_name"] = 	"BR 185 554 MRCE (2009)",
 		
 		["br185_r4c_name"] = 	"BR 185 550 Rail 4 Chem (2005)",
 		["br185_r4c2_name"] = 	"BR 185-CL 006 Rail 4 Chem (2002)",
 		
-		["br185_sbb_name"] = 	"Re 482 xxx (2003)",
 		
 		 -- Vorspann
         ["Vorspann_traxx1"] = "Vorspann-Loks aktivieren?",
