@@ -99,6 +99,7 @@ return {
 						
 		["br185_atlu_name"] = 	"BR 185 523 Alpha Trains (2003)",
 		["br185_atlu2_name"] = 	"BR 185 535 Alpha Trains (2003)",
+		["br185_atlu3_name"] = 	"BR 185 511 Alpha Trains (2007)",
 		
 		["br185_bls_name"] = 	"Re 485 001 (2003)",
 		
@@ -116,6 +117,10 @@ return {
 		["br185_mrce2_name"] = 	"BR 185 546 MRCE (2005)",
 		["br185_mrce3_name"] = 	"BR 185 556 MRCE (2009)",
 		["br185_mrce4_name"] = 	"BR 185 554 MRCE (2009)",
+		["br185_mrce5_name"] = 	"BR 185 547 MRCE (2009)",
+		["br185_mrce6_name"] = 	"BR 185 545 MRCE (2018)",
+		
+		["br185_beacon_name"] = "BR 185 546 Beacon (2023)",
 		
 		["br185_r4c_name"] = 	"BR 185 550 Rail 4 Chem (2005)",
 		["br185_r4c2_name"] = 	"BR 185-CL 006 Rail 4 Chem (2002)",
