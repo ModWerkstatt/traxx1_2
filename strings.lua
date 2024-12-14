@@ -56,17 +56,22 @@ return {
 		["mod_name"] = "Bombardier Traxx 1",
 		["mod_desc"] = "Der  ",
 
+
+		["br146_menu"] = "Traxx AC1 P160",
+		["br146_menu_fake"] = "Traxx AC1 P160 - Fake",
+		["br146_desc"] = "Die Traxx AC 1 P160 ",
+		
+		
+		["br146_led"] = "BR 146 mit 2 Stromabnehmern und LED Zugzielanzeiger",
+
 		["br185_menu"] = "Traxx AC1 F140",
 		["br185_2_menu"] = "Traxx AC1 F140 - 4 Stromabnehmer",
-		["br146_menu"] = "Traxx AC1 P160",
 		["br185_menu_fake"] = "Traxx AC1 F140 - Fake",
 		["br185_2_menu_fake"] = "Traxx AC1 F140 - 4 Stromabnehmer - Fake",
-		["br146_menu_fake"] = "Traxx AC1 P160 - Fake",
-		["br185_desc"] = "Der ",
+		["br185_desc"] = "Die Traxx AC 1 F140 ",
 
 		["br185_ch"] = 	"BR 185 mit 4 Stromabnehmern für Schweiz, Frankreich oder Luxemburg",
 		["br185"] = 	"BR 185 mit 2 Stromabnehmern",
-		["br146_zza"] = "BR 146 mit 2 Stromabnehmern und Zugzielanzeiger",
 
 		["pz_br185"] = "Traxx 1 für Personenverkehr",
 		["option_pz_br185_desc"] = "Sollen die Traxx 1 für den Personenverkehr aktiviert werden?",
@@ -89,6 +94,9 @@ return {
 
 		--- BR 146 ---
 		["br146_db_name"] = 	"BR 146 104 DB AG (2003)",
+		["br146_db2_name"] = 	"BR 146 115 DB AG (2008)",
+		["br146_db3_name"] = 	"BR 146 110 DB AG (2018)",
+		
 		["br146_me_name"] = 	"ME 145-01 Metronom (2003)",
 
 		--- BR 185 ---
