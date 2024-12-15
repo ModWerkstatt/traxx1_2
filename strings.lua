@@ -60,8 +60,7 @@ return {
 		["br146_menu"] = "Traxx AC1 P160",
 		["br146_menu_fake"] = "Traxx AC1 P160 - Fake",
 		["br146_desc"] = "Die Traxx AC 1 P160 ",
-		
-		
+				
 		["br146_led"] = "BR 146 mit 2 Stromabnehmern und LED Zugzielanzeiger",
 
 		["br185_menu"] = "Traxx AC1 F140",
@@ -153,11 +152,104 @@ return {
         ["Vorspann_traxx1"] = "Vorspann-Loks aktivieren?",
         ["option_vorspann_traxx1_desc"] = "Sollen die Vorspann-Loks (mit vorderem Panto gehoben) aktiviert werden?",
 		
+		--- BR 146 ---
+		["br146_db_name_vorspann"] = 	"Vorspann - BR 146 104 DB AG (2003)",
+		["br146_db2_name_vorspann"] = 	"Vorspann - BR 146 115 DB AG (2008)",
+		["br146_db3_name_vorspann"] = 	"Vorspann - BR 146 110 DB AG (2018)",
+		
+		["br146_me_name_vorspann"] = 	"Vorspann - ME 146-01 Metronom (2003)",
+		["br146_me2_name_vorspann"] = 	"Vorspann - ME 146-10 Metronom (2007)",
+
+		--- BR 185 ---
+		
+		["br185_bombardier_name_vorspann"] = "Vorspann - BR 185 001 Bombardier - Vorserie (2000)",
+		
+		["br185_akiem_name_vorspann"] = 	"Vorspann - BR 185 555 Akiem (2023)",
+						
+		["br185_atlu_name_vorspann"] = 	"Vorspann - BR 185 523 Alpha Trains (2003)",
+		["br185_atlu2_name_vorspann"] = "Vorspann - BR 185 535 Alpha Trains (2003)",
+		["br185_atlu3_name_vorspann"] = "Vorspann - BR 185 511 Alpha Trains (2007)",
+		["br185_atlu4_name_vorspann"] = "Vorspann - BR 185 525 Alpha Trains (2007)",
+		
+		["br185_bls_name_vorspann"] = 	"Vorspann - Re 485 001 (2003)",
+		["br185_bls2_name_vorspann"] = 	"Vorspann - Re 485 010 (2006)",
+		
+		["br185_cap_name_vorspann"] = 	"Vorspann - BR 185 542 Captrain (2012)",
+		["br185_cap2_name_vorspann"] = 	"Vorspann - BR 185-CL 001 Captrain (2016)",
+		
+		["br185_db_name_vorspann"] = 	"Vorspann - BR 185 139 DB AG (2006)",
+		["br185_db2_name_vorspann"] = 	"Vorspann - BR 185 106 DB AG (2003)",
+		["br185_db3_name_vorspann"] = 	"Vorspann - BR 185 018 DB AG (2001)",
+		["br185_db4_name_vorspann"] = 	"Vorspann - BR 185 104 DB AG (2020)",
+		["br185_db5_name_vorspann"] = 	"Vorspann - BR 185 040 DB AG (2006)",
+		["br185_db6_name_vorspann"] = 	"Vorspann - BR 185 006 DB AG (2020)",
+		
+		["br185_itl_name_vorspann"] = 	"Vorspann - BR 185 548 ITL (2005)",
+		["br185_itl2_name_vorspann"] = 	"Vorspann - BR 185 548 ITL (2007)",
+		
+		["br185_mrce_name_vorspann"] = 	"Vorspann - BR 185 551 MRCE (2005)",
+		["br185_mrce2_name_vorspann"] = "Vorspann - BR 185 546 MRCE (2005)",
+		["br185_mrce3_name_vorspann"] = "Vorspann - BR 185 556 MRCE (2009)",
+		["br185_mrce4_name_vorspann"] = "Vorspann - BR 185 554 MRCE (2009)",
+		["br185_mrce5_name_vorspann"] = "Vorspann - BR 185 547 MRCE (2009)",
+		["br185_mrce6_name_vorspann"] = "Vorspann - BR 185 545 MRCE (2018)",
+		
+		["br185_beacon_name_vorspann"] = "Vorspann - BR 185 546 Beacon (2023)",
+		
+		["br185_r4c_name_vorspann"] = 	"Vorspann - BR 185 550 Rail 4 Chem (2005)",
+		["br185_r4c2_name_vorspann"] = 	"Vorspann - BR 185-CL 006 Rail 4 Chem (2002)",
 		
 		
         -- Fake
         ["Fake_traxx1"] = "Fake-Loks aktivieren?",
         ["option_fake_traxx1_desc"] = "Sollen die Fake-Loks (Pantos unten, kein Licht, kein Fahrer) aktiviert werden?",
+				
+		--- BR 146 ---
+		["br146_db_name_fake"] = 	"Fake - BR 146 104 DB AG (2003)",
+		["br146_db2_name_fake"] = 	"Fake - BR 146 115 DB AG (2008)",
+		["br146_db3_name_fake"] = 	"Fake - BR 146 110 DB AG (2018)",
+		
+		["br146_me_name_fake"] = 	"Fake - ME 146-01 Metronom (2003)",
+		["br146_me2_name_fake"] = 	"Fake - ME 146-10 Metronom (2007)",
+
+		--- BR 185 ---
+		
+		["br185_bombardier_name_fake"] = "Fake - BR 185 001 Bombardier - Vorserie (2000)",
+		
+		["br185_akiem_name_fake"] = 	"Fake - BR 185 555 Akiem (2023)",
+						
+		["br185_atlu_name_fake"] = 		"Fake - BR 185 523 Alpha Trains (2003)",
+		["br185_atlu2_name_fake"] = 	"Fake - BR 185 535 Alpha Trains (2003)",
+		["br185_atlu3_name_fake"] = 	"Fake - BR 185 511 Alpha Trains (2007)",
+		["br185_atlu4_name_fake"] = 	"Fake - BR 185 525 Alpha Trains (2007)",
+		
+		["br185_bls_name_fake"] = 		"Fake - Re 485 001 (2003)",
+		["br185_bls2_name_fake"] = 		"Fake - Re 485 010 (2006)",
+		
+		["br185_cap_name_fake"] = 		"Fake - BR 185 542 Captrain (2012)",
+		["br185_cap2_name_fake"] = 		"Fake - BR 185-CL 001 Captrain (2016)",
+		
+		["br185_db_name_fake"] = 		"Fake - BR 185 139 DB AG (2006)",
+		["br185_db2_name_fake"] = 		"Fake - BR 185 106 DB AG (2003)",
+		["br185_db3_name_fake"] = 		"Fake - BR 185 018 DB AG (2001)",
+		["br185_db4_name_fake"] = 		"Fake - BR 185 104 DB AG (2020)",
+		["br185_db5_name_fake"] = 		"Fake - BR 185 040 DB AG (2006)",
+		["br185_db6_name_fake"] = 		"Fake - BR 185 006 DB AG (2020)",
+			
+		["br185_itl_name_fake"] = 		"Fake - BR 185 548 ITL (2005)",
+		["br185_itl2_name_fake"] = 		"Fake - BR 185 548 ITL (2007)",
+		
+		["br185_mrce_name_fake"] = 		"Fake - BR 185 551 MRCE (2005)",
+		["br185_mrce2_name_fake"] = 	"Fake - BR 185 546 MRCE (2005)",
+		["br185_mrce3_name_fake"] = 	"Fake - BR 185 556 MRCE (2009)",
+		["br185_mrce4_name_fake"] = 	"Fake - BR 185 554 MRCE (2009)",
+		["br185_mrce5_name_fake"] = 	"Fake - BR 185 547 MRCE (2009)",
+		["br185_mrce6_name_fake"] = 	"Fake - BR 185 545 MRCE (2018)",
+		
+		["br185_beacon_name_fake"] = 	"Fake - BR 185 546 Beacon (2023)",
+		
+		["br185_r4c_name_fake"] = 		"Fake - BR 185 550 Rail 4 Chem (2005)",
+		["br185_r4c2_name_fake"] = 		"Fake - BR 185-CL 006 Rail 4 Chem (2002)",
 		
 		
 
