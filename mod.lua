@@ -33,14 +33,14 @@ return {
 			},
 			{
 				key = "traxx1_pz",
-				name = _("ch_traxx1"),
+				name = _("pz_traxx1"),
 				values = { "No", "Yes", },
 				tooltip = _("option_pz_traxx1_desc"),
 				defaultIndex = 1,
 			},
 			{
 				key = "traxx1_gz",
-				name = _("ch_traxx1"),
+				name = _("gz_traxx1"),
 				values = { "No", "Yes", },
 				tooltip = _("option_gz_traxx1_desc"),
 				defaultIndex = 1,
@@ -50,6 +50,27 @@ return {
 				name = _("ch_traxx1"),
 				values = { "No", "Yes", },
 				tooltip = _("option_ch_traxx1_desc"),
+				defaultIndex = 1,
+			},
+			{
+				key = "traxx1_sa",
+				name = _("sa_traxx1"),
+				values = { "No", "Yes", },
+				tooltip = _("option_sa_traxx1_desc"),
+				defaultIndex = 1,
+			},
+			{
+				key = "traxx1_db",
+				name = _("db_traxx1"),
+				values = { "No", "Yes", },
+				tooltip = _("option_db_traxx1_desc"),
+				defaultIndex = 1,
+			},
+			{
+				key = "traxx1_sbb",
+				name = _("sbb_traxx1"),
+				values = { "No", "Yes", },
+				tooltip = _("option_sbb_traxx1_desc"),
 				defaultIndex = 1,
 			},
 			{
@@ -106,6 +127,38 @@ return {
 			end
 			return data
 		end
+		
+		local saFilter = function(fileName, data)
+			if data.metadata.transportVehicle and data.metadata.traxx1 and data.metadata.traxx1.sa == true then
+				data.metadata.availability.yearFrom = 1
+				data.metadata.availability.yearTo = 2
+			end
+			return data
+		end
+		
+		local dbFilter = function(fileName, data)
+			if data.metadata.transportVehicle and data.metadata.traxx1 and data.metadata.traxx1.db == true then
+				data.metadata.availability.yearFrom = 1
+				data.metadata.availability.yearTo = 2
+			end
+			return data
+		end
+		
+		local sbbFilter = function(fileName, data)
+			if data.metadata.transportVehicle and data.metadata.traxx1 and data.metadata.traxx1.sbb == true then
+				data.metadata.availability.yearFrom = 1
+				data.metadata.availability.yearTo = 2
+			end
+			return data
+		end
+		
+		local privatFilter = function(fileName, data)
+			if data.metadata.transportVehicle and data.metadata.traxx1 and data.metadata.traxx1.privat == true then
+				data.metadata.availability.yearFrom = 1
+				data.metadata.availability.yearTo = 2
+			end
+			return data
+		end
 
 
 		if modParams[getCurrentModId()] ~= nil then
@@ -126,8 +179,17 @@ return {
 			if params["traxx1_ch"] == 0 then
 				addModifier("loadModel", chFilter)
 			end
+			if params["traxx1_sa"] == 0 then
+				addModifier("loadModel", saFilter)
+			end
+			if params["traxx1_db"] == 0 then
+				addModifier("loadModel", dbFilter)
+			end
+			if params["traxx1_sbb"] == 0 then
+				addModifier("loadModel", sbbFilter)
+			end
 			if params["traxx1_privat"] == 0 then
-				addModifier("loadModel", acFilter)
+				addModifier("loadModel", privatFilter)
 			end
 
 		else
@@ -136,6 +198,9 @@ return {
 			addModifier("loadModel", pzFilter)
 			addModifier("loadModel", gzFilter)
 			addModifier("loadModel", chFilter)
+			addModifier("loadModel", saFilter)
+			addModifier("loadModel", dbFilter)
+			addModifier("loadModel", sbbFilter)
 			addModifier("loadModel", privatFilter)
 		end
 	end

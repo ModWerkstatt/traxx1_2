@@ -73,20 +73,29 @@ return {
 		["br185_ch"] = 	"BR 185 mit 4 Stromabnehmern für Schweiz, Frankreich oder Luxemburg",
 		["br185"] = 	"BR 185 mit 2 Stromabnehmern",
 
-		["pz_br185"] = "Traxx 1 für Personenverkehr",
-		["option_pz_br185_desc"] = "Sollen die Traxx 1 für den Personenverkehr aktiviert werden?",
+		["pz_traxx1"] = "Traxx 1 für Personenverkehr",
+		["option_pz_traxx1_desc"] = "Sollen die Traxx 1 für den Personenverkehr aktiviert werden?",
 		
-		["gz_br185"] = "Traxx 1 für Güterzugverkehr",
-		["option_gz_br185_desc"] = "Sollen die Traxx 1 für den Güterverkehr aktiviert werden?",
+		["gz_traxx1"] = "Traxx 1 für Güterzugverkehr",
+		["option_gz_traxx1_desc"] = "Sollen die Traxx 1 für den Güterverkehr aktiviert werden?",
 		
-		["ch_br185"] = "Traxx 1 mit 4 Stromabnhemer für Schweiz, Frankreich oder Luxemburg",
-		["option_ms_br185_desc"] = "Sollen die Traxx 1 für das Schweiz, Frankreich oder Luxemburg System aktiviert werden?",
+		["ch_traxx1"] = "Traxx 1 mit 4 Stromabnhemer für Schweiz, Frankreich oder Luxemburg",
+		["option_ch_traxx1_desc"] = "Sollen die Traxx 1 mit 4 Stromabnhemer für das Schweiz, Frankreich oder Luxemburg System aktiviert werden?",
 		
-		["db_br185"] = "Traxx 1 der DB aktivieren?",
-		["option_db_br185_desc"] = "Sollen die Traxx 1 für die DB aktiviert werden?",
+		["sa_traxx1"] = "Traxx 1 mit gehobenen Stromabnehmer für Schweiz, Frankreich oder Luxemburg",
+		["option_sa_traxx1_desc"] = "Sollen die Traxx 1 mit gehobenen Stromabnehmer für das Schweiz, Frankreich oder Luxemburg System aktiviert werden?",
 		
-		["privat_br185"] = "Traxx 1 von den Privatbahnen aktivieren?",
-		["option_privat_br185_desc"] = "Sollen die Traxx 1 von den Privatbahnen aktiviert werden?",
+		["db_traxx1"] = "Traxx 1 der DB aktivieren?",
+		["option_db_traxx1_desc"] = "Sollen die Traxx 1 für die DB aktiviert werden?",
+		
+		["db_traxx1"] = "Traxx 1 von der DB aktivieren?",
+		["option_db_traxx1_desc"] = "Sollen die Traxx 1 von der DB aktiviert werden?",
+		
+		["sbb_traxx1"] = "Traxx 1 von der SBB und BLS aktivieren?",
+		["option_sbb_traxx1_desc"] = "Sollen die Traxx 1 von der SBB und BLS aktiviert werden?",
+		
+		["privat_traxx1"] = "Traxx 1 von den Privatbahnen aktivieren?",
+		["option_privat_traxx1_desc"] = "Sollen die Traxx 1 von den Privatbahnen aktiviert werden?",
 				
 		--- 185 001 bis 084 DB
 		--- 185 085 bis 149 DB/CH
