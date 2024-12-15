@@ -97,7 +97,8 @@ return {
 		["br146_db2_name"] = 	"BR 146 115 DB AG (2008)",
 		["br146_db3_name"] = 	"BR 146 110 DB AG (2018)",
 		
-		["br146_me_name"] = 	"ME 145-01 Metronom (2003)",
+		["br146_me_name"] = 	"ME 146-01 Metronom (2003)",
+		["br146_me2_name"] = 	"ME 146-10 Metronom (2007)",
 
 		--- BR 185 ---
 		
@@ -122,6 +123,9 @@ return {
 		["br185_db4_name"] = 	"BR 185 104 DB AG (2020)",
 		["br185_db5_name"] = 	"BR 185 040 DB AG (2006)",
 		["br185_db6_name"] = 	"BR 185 006 DB AG (2020)",
+		
+		["br185_itl_name"] = 	"BR 185 548 ITL (2005)",
+		["br185_itl2_name"] = 	"BR 185 548 ITL (2007)",
 		
 		["br185_mrce_name"] = 	"BR 185 551 MRCE (2005)",
 		["br185_mrce2_name"] = 	"BR 185 546 MRCE (2005)",
