@@ -419,7 +419,7 @@ return {
             carrier = "RAIL",
 			multipleUnitOnly = false,
             reversible = true,
-            groupFileName = "vehicle/train/traxx1/menu_br185_2_fake.mdl",
+            groupFileName = "vehicle/train/traxx1/fake/menu_br185_2_fake.mdl",
         },
 		seatProvider = {
             crewModels = { "characters/era_c_driver_rail.mdl" },
