@@ -70,7 +70,7 @@ return {
 			            transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 5.1999998092651, 0, 0, 1, },
                     },
 					{
-						materials = { "vehicle/train/traxx1/rumpf_br146_db.mtl", },
+						materials = { "vehicle/train/traxx1/rumpf_br146_me.mtl", },
 						mesh = "vehicle/train/traxx1/rumpf2_lod0.msh",
 						name = "rumpf",
 						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, -0.041123498231173, 1, },
@@ -267,7 +267,7 @@ return {
 			            transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 5.1999998092651, 0, 0, 1, },
                     },
 					{
-						materials = { "vehicle/train/traxx1/rumpf_br146_db.mtl", },
+						materials = { "vehicle/train/traxx1/rumpf_br146_me.mtl", },
 						mesh = "vehicle/train/traxx1/rumpf_lod1.msh",
 						name = "rumpf",
 						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, -0.041123498231173, 1, },
@@ -458,7 +458,7 @@ return {
 			            transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 5.1999998092651, 0, 0, 1, },
                     },
 					{
-						materials = { "vehicle/train/traxx1/rumpf_br146_db.mtl", },
+						materials = { "vehicle/train/traxx1/rumpf_br146_me.mtl", },
 						mesh = "vehicle/train/traxx1/rumpf_lod2.msh",
 						name = "rumpf",
 						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, -0.041123498231173, 1, },
@@ -553,7 +553,7 @@ return {
 			node = {
 				children = {
 					{
-						materials = { "vehicle/train/traxx1/rumpf_br146_db.mtl", },
+						materials = { "vehicle/train/traxx1/rumpf_br146_me.mtl", },
 						mesh = "vehicle/train/traxx1/rumpf_lod3.msh",
 						name = "rumpf",
 						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, -0.041123498231173, 1, },
@@ -570,14 +570,14 @@ return {
 	metadata = {
 		availability = {
 			yearFrom = 2003,
-			yearTo = 2008,
+			yearTo = 2007,
 		},
 		cost = {
 			price = -1,
 			priceScale = 1,
 		},
 		description = {
-			name = _("br146_db_name_vorspann"),
+			name = _("br146_me_name_vorspann"),
 			description = _("br146_desc"),
 		},
 		emission = {
@@ -700,9 +700,9 @@ return {
 			gz = false,
 			ch = false,
 			sa = false,
-			db = true,
+			db = false,
 			sbb = false,
-			privat = false,
+			privat = true,
 		},
 	},
 	version = 1,

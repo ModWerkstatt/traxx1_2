@@ -33,42 +33,43 @@ soundsetutil.addTrackParam01
 		{
 			{ .0, .0 },
 			{ .215, .0 },
-			{ .245, .9 },
+			{ .22, .5 },
 			{ 1.0, 0.9 } },
 		{
 			{ .0, 1.0 },
 			{ 1.0, 1.0 } }, 
-		"power01")	
+		"speed01")	
 	
 soundsetutil.addTrackParam01
 (data, "vehicle/br146_0/146_fahrt1.wav", 25.0,
 		{ 
 		{ .0, 0.0 },
 		{ .001, 0.3 },
-		{ .115, 1.0 },
+		{ .130, 1.0 },
+		{ .131, 0.0 },
 		{ .135, 0.0 },
 		{ .515, .0 },
 		{ 1.0, 0.0 } },
 		{
-		{ .0, 0.2 },
-		{ .1, .6 },
-		{ 1.0, 1.0 }},
+		{ .0, 0.85 },
+		{ .1, 1.0 },
+		{ 1.0, 1.1 }},
 		"speed01")
 	
 soundsetutil.addTrackParam01
 (data, "vehicle/br146_0/146_fahrt2.wav", 25.0,
 		{ 
 		{ .0, 0.0 },
-		{ .115, 0.0 },
-		{ .135, 1.0 },
+		{ .120, 0.0 },
+		{ .130, 1.0 },
 		{ .515, .6 },
 		{ 1.0, 0.3 } },
 		{
-		{ .0, 0.2 },
-		{ .1, .6 },
-		{ 1.0, 1.0 }},
+		{ .0, 0.55 },
+		{ .1, .8 },
+		{ 1.0, 1.2 }},
 		"speed01")
-	
+	--[[
 soundsetutil.addTrackParam01
 (data, "vehicle/br146_0/146_besch.wav", 25.0,
 		{ 
@@ -88,7 +89,8 @@ soundsetutil.addTrackParam01
 		{ .0, 0.0 },
 		{ .115, 0.4 },
 		{ 1.0, 1.0 } },
-		"speed01")		
+		"speed01")	
+]]		
 
 soundsetutil.addEvent(data, "horn", { "vehicle/br146_0/146_makro.wav" }, 50.0)
 soundsetutil.addTrackSqueal(data, "vehicle/br146_0/kurve.wav", 25.0)
