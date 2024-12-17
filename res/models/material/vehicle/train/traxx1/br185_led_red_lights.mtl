@@ -1,7 +1,7 @@
 function data()
 return {
 	__version = "",
-	order = 0,
+	order = -1,
 	params = {
 		emissive_scale = {
 			emissiveScale = { 70, 1, 0, },

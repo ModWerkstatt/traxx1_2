@@ -1,8 +1,15 @@
 function data()
 return {
 	__version = "",
-	order = 0,
+	order = -1,
 	params = {
+		alpha_test = {
+			a2CThreshold = 0,
+			alphaThreshold = 0.5,
+			cutout = true,
+			disableDepthAndNormalWrite = false,
+			sorted = true,
+		},
 		emissive_scale = {
 			emissiveScale = { 70, 70, 20, },
 		},
@@ -15,12 +22,12 @@ return {
 			type = "TWOD",
 		},
 		polygon_offset = {
-			factor = -1,
-			forceDepthWrite = false,
+			factor = 0,
+			forceDepthWrite = true,
 			units = -1,
 		},
 		two_sided = {
-			flipNormal = true,
+			flipNormal = false,
 			twoSided = false,
 		},
 	},
