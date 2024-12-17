@@ -70,7 +70,7 @@ return {
 			            transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 5.1999998092651, 0, 0, 1, },
                     },
 					{
-						materials = { "vehicle/train/traxx1/rumpf_br185_akiem.mtl", },
+						materials = { "vehicle/train/traxx1/rumpf_br185_atlu2.mtl", },
 						mesh = "vehicle/train/traxx1/rumpf_lod0.msh",
 						name = "rumpf",
 						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, -0.041123498231173, 1, },
@@ -156,13 +156,13 @@ return {
 					{
 						materials = { "vehicle/train/traxx1/dach.mtl", },
 						mesh = "vehicle/train/traxx1/panto_down_ch_lod0.msh",
-						name = "panto_up_de",
+						name = "panto_up_ch",
 						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
 					},
 					{
 						materials = { "vehicle/train/traxx1/dach.mtl", },
 						mesh = "vehicle/train/traxx1/panto_down_ch_lod0.msh",
-						name = "panto_up_de",
+						name = "panto_up_ch",
 						transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
 					},
 					{
@@ -214,7 +214,7 @@ return {
 						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
 					},
 					{
-						materials = { "vehicle/train/traxx1/rumpf_br185_akiem.mtl", },
+						materials = { "vehicle/train/traxx1/rumpf_br185_atlu2.mtl", },
 						mesh = "vehicle/train/traxx1/kamera_lod0.msh",
 						name = "rumpf",
 						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, -0.041123498231173, 1, },
@@ -285,14 +285,14 @@ return {
 			            transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 5.1999998092651, 0, 0, 1, },
                     },
 					{
-						materials = { "vehicle/train/traxx1/rumpf_br185_akiem.mtl", },
+						materials = { "vehicle/train/traxx1/rumpf_br185_atlu2.mtl", },
 						mesh = "vehicle/train/traxx1/rumpf_lod1.msh",
 						name = "rumpf",
 						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, -0.041123498231173, 1, },
 					},
 					{
 						materials = { "vehicle/train/traxx1/dach.mtl", },
-						mesh = "vehicle/train/traxx1/dach_ch_lod1.msh",
+						mesh = "vehicle/train/traxx1/dach_de_lod1.msh",
 						name = "dach_de",
 						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
 					},
@@ -371,37 +371,37 @@ return {
 					{
 						materials = { "vehicle/train/traxx1/dach.mtl", },
 						mesh = "vehicle/train/traxx1/panto_down_ch_lod1.msh",
-						name = "panto_up_de",
+						name = "panto_up_ch",
 						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
 					},
 					{
 						materials = { "vehicle/train/traxx1/dach.mtl", },
 						mesh = "vehicle/train/traxx1/panto_down_ch_lod1.msh",
-						name = "panto_up_de",
+						name = "panto_up_ch",
 						transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
 					},
 					{
 						materials = { "vehicle/train/emissive/train_all_lights.mtl", },
 						mesh = "vehicle/train/traxx1/licht_weiss_lod0.msh",
-						name = "panto_up_de",
+						name = "panto_up_ch",
 						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
 					},
 					{
 						materials = { "vehicle/train/emissive/train_all_lights.mtl", },
 						mesh = "vehicle/train/traxx1/licht_rot_lod0.msh",
-						name = "panto_up_de",
+						name = "panto_up_ch",
 						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
 					},
 					{
 						materials = { "vehicle/train/emissive/train_all_lights.mtl", },
 						mesh = "vehicle/train/traxx1/licht_weiss_lod0.msh",
-						name = "panto_up_de",
+						name = "panto_up_ch",
 						transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
 					},
 					{
 						materials = { "vehicle/train/emissive/train_all_lights.mtl", },
 						mesh = "vehicle/train/traxx1/licht_rot_lod0.msh",
-						name = "panto_up_de",
+						name = "panto_up_ch",
 						transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
 					},
 					{
@@ -482,7 +482,7 @@ return {
 			            transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 5.1999998092651, 0, 0, 1, },
                     },
 					{
-						materials = { "vehicle/train/traxx1/rumpf_br185_akiem.mtl", },
+						materials = { "vehicle/train/traxx1/rumpf_br185_atlu2.mtl", },
 						mesh = "vehicle/train/traxx1/rumpf_lod2.msh",
 						name = "rumpf",
 						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, -0.041123498231173, 1, },
@@ -562,13 +562,13 @@ return {
 					{
 						materials = { "vehicle/train/traxx1/dach.mtl", },
 						mesh = "vehicle/train/traxx1/panto_down_ch_lod2.msh",
-						name = "panto_up_de",
+						name = "panto_up_ch",
 						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
 					},
 					{
 						materials = { "vehicle/train/traxx1/dach.mtl", },
 						mesh = "vehicle/train/traxx1/panto_down_ch_lod2.msh",
-						name = "panto_up_de",
+						name = "panto_up_ch",
 						transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
 					},
 					{
@@ -589,7 +589,7 @@ return {
 			node = {
 				children = {
 					{
-						materials = { "vehicle/train/traxx1/rumpf_br185_akiem.mtl", },
+						materials = { "vehicle/train/traxx1/rumpf_br185_atlu2.mtl", },
 						mesh = "vehicle/train/traxx1/rumpf_lod3.msh",
 						name = "rumpf",
 						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, -0.041123498231173, 1, },
@@ -605,15 +605,15 @@ return {
 	},
 	metadata = {
 		availability = {
-			yearFrom = 2023,
-			yearTo = 0000,
+			yearFrom = 2003,
+			yearTo = 2007,
 		},
 		cost = {
 			price = -1,
 			priceScale = 1,
 		},
 		description = {
-			name = _("br185_akiem_name_vorspann"),
+			name = _("br185_atlu2_name_vorspann"),
 			description = _("br185_desc") .. _("br185_ch"),
 		},
 		emission = {
@@ -663,7 +663,7 @@ return {
 					type = "ELECTRIC",
 				},
 			},
-			soundSet = { name = "br185_1", },
+			soundSet = { name = "train_diesel", },
 			topSpeed = 38.8889,
 			weight = 84,
 		},
