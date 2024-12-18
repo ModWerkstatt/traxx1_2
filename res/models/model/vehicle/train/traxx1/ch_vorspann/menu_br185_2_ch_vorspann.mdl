@@ -37,7 +37,7 @@ return {
 			price = 0,
 		},
 		description = {
-			name = _("br185_2_menu_ch"),
+			name = _("br185_2_menu_ch_vorspann"),
 		},
 		maintenance = {
 			lifespan = 0,

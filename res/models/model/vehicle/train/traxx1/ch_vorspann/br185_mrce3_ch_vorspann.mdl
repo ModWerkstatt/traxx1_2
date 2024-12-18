@@ -613,7 +613,7 @@ return {
 			priceScale = 1,
 		},
 		description = {
-			name = _("br185_mrce3_name_ch"),
+			name = _("br185_mrce3_name_ch_vorspann"),
 			description = _("br185_desc") .. _("br185_ch"),
 		},
 		emission = {
@@ -630,12 +630,12 @@ return {
 			configs = {
 				{
 					axles = { "vehicle/train/traxx1/rad_lod0.msh", },
-                    backBackwardParts = { 30, 14, 15, },
-					backForwardParts = { 28, 16, 17, },
-					frontBackwardParts = { 27, 18, 19, },
-					frontForwardParts = { 29, 12, 13, },
-					innerBackwardParts = { 22, 23, },
-					innerForwardParts = { 20, 21, },
+                    backBackwardParts = { 30, 16, 17, },
+					backForwardParts = { 28, 12, 13, },
+					frontBackwardParts = { 27, 14, 15, },
+					frontForwardParts = { 29, 18, 19, },
+					innerBackwardParts = { 20, 21, },
+					innerForwardParts = { 22, 23, },
 				},
 				{
 					axles = { "vehicle/train/traxx1/rad_lod1.msh", },
@@ -643,17 +643,17 @@ return {
 					backForwardParts = { 28, 16, 17, },
 					frontBackwardParts = { 27, 18, 19, },
 					frontForwardParts = { 29, 12, 13, },
-					innerBackwardParts = { 22, 23, },
-					innerForwardParts = { 20, 21, },
+					innerBackwardParts = { 20, 21, },
+					innerForwardParts = { 22, 23, },
 				},
 				{
 					axles = { "vehicle/train/traxx1/rad_lod2.msh", },
-					backBackwardParts = { 13, 14, },
-					backForwardParts = { 15, 16, },
-					frontBackwardParts = { 17, 18, },
-					frontForwardParts = { 11, 12, },
-					innerBackwardParts = { 21, 22, },
-					innerForwardParts = { 19, 20, },
+					backBackwardParts = { 15, 16, },
+					backForwardParts = { 11, 12, },
+					frontBackwardParts = { 13, 14, },
+					frontForwardParts = { 17, 18, },
+					innerBackwardParts = { 19, 20, },
+					innerForwardParts = { 21, 22, },					
 				},
 			},
 			engines = {
@@ -671,7 +671,7 @@ return {
             carrier = "RAIL",
 			multipleUnitOnly = false,
             reversible = true,
-            groupFileName = "vehicle/train/traxx1/ch/menu_br185_2_ch.mdl",
+            groupFileName = "vehicle/train/traxx1/ch_vorspann/menu_br185_2_ch_vorspann.mdl",
         },
 		seatProvider = {
             crewModels = { "characters/era_c_driver_rail.mdl" },
@@ -694,7 +694,7 @@ return {
             },
 		},
 		traxx1 = {
-			vorspann = false,
+			vorspann = true,
 			fake = false,
 			pz = false,
 			gz = true,
