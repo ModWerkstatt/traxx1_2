@@ -5,7 +5,7 @@ function data()
 local data = soundsetutil.makeSoundSet()
 	
 soundsetutil.addTrackParam01
-(data, "vehicle/train/traxx1/gw_roll_n.wav", 25.0,
+(data, "vehicle/br146_0/gw_roll_n.wav", 25.0,
 		{ 
 		{ .0, .0 },
 		{ .2, .5 },
@@ -17,7 +17,7 @@ soundsetutil.addTrackParam01
 				
 		
 soundsetutil.addTrackParam01
-(data, "vehicle/train/traxx1/146_stand.wav", 25.0,
+(data, "vehicle/br146_0/146_stand.wav", 25.0,
 		{ 
 		{ .0, 0.3 },
 		{ .3, .0 },
@@ -29,7 +29,7 @@ soundsetutil.addTrackParam01
 	
 	
 soundsetutil.addTrackParam01
-(data, "vehicle/train/traxx1/146_luft.wav", 25.0,
+(data, "vehicle/br146_0/146_luft.wav", 25.0,
 		{
 			{ .0, .0 },
 			{ .215, .0 },
@@ -41,7 +41,7 @@ soundsetutil.addTrackParam01
 		"speed01")	
 	
 soundsetutil.addTrackParam01
-(data, "vehicle/train/traxx1/146_fahrt1.wav", 25.0,
+(data, "vehicle/br146_0/146_fahrt1.wav", 25.0,
 		{ 
 		{ .0, 0.0 },
 		{ .001, 0.3 },
@@ -57,7 +57,7 @@ soundsetutil.addTrackParam01
 		"speed01")
 	
 soundsetutil.addTrackParam01
-(data, "vehicle/train/traxx1/146_fahrt2.wav", 25.0,
+(data, "vehicle/br146_0/146_fahrt2.wav", 25.0,
 		{ 
 		{ .0, 0.0 },
 		{ .120, 0.0 },
@@ -71,7 +71,7 @@ soundsetutil.addTrackParam01
 		"speed01")
 	--[[
 soundsetutil.addTrackParam01
-(data, "vehicle/train/traxx1/146_besch.wav", 25.0,
+(data, "vehicle/br146_0/146_besch.wav", 25.0,
 		{ 
 		{ .0, 0.0 },
 		{ .14, 0.0 },
@@ -92,9 +92,9 @@ soundsetutil.addTrackParam01
 		"speed01")	
 ]]		
 
-soundsetutil.addEvent(data, "horn", { "vehicle/train/traxx1/146_makro.wav" }, 50.0)
-soundsetutil.addTrackSqueal(data, "vehicle/train/traxx1/kurve.wav", 25.0)
-soundsetutil.addTrackBrake(data, "vehicle/train/traxx1/bremse_neu.wav", 25.0, 1.0)
+soundsetutil.addEvent(data, "horn", { "vehicle/br146_0/146_makro.wav" }, 50.0)
+soundsetutil.addTrackSqueal(data, "vehicle/br146_0/kurve.wav", 25.0)
+soundsetutil.addTrackBrake(data, "vehicle/br146_0/bremse_neu.wav", 25.0, 1.0)
 
 
 return data
