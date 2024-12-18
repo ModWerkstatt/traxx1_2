@@ -148,6 +148,12 @@ return {
 						transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
 					},
 					{
+						materials = { "vehicle/train/traxx1/dach.mtl", },
+						mesh = "vehicle/train/traxx1/panto_down_de_lod0.msh",
+						name = "panto",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
 						materials = { "vehicle/train/traxx1/br185_led_white_lights.mtl", },
 						mesh = "vehicle/train/traxx1/licht_weiss_led_lod0.msh",
 						name = "licht_weiss_led_vorne",
@@ -608,7 +614,7 @@ return {
 					type = "ELECTRIC",
 				},
 			},
-			soundSet = { name = "train_diesel", },
+			soundSet = { name = "br185_1", },
 			topSpeed = 38.8889,
 			weight = 84,
 		},
