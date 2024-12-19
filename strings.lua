@@ -61,16 +61,20 @@ return {
 		["br146_menu_fake"] = "Traxx AC1 P160 - Fake",
 		["br146_desc"] = "Die Traxx AC 1 P160 ",
 				
-		["br146_led"] = "BR 146 mit 2 Stromabnehmern und LED Zugzielanzeiger",
+		["br146_led"] = "BR 146 mit 2 Panto und LED Zugzielanzeiger",
 
 		["br185_menu"] = "Traxx AC1 F140",
-		["br185_2_menu"] = "Traxx AC1 F140 - 4 Stromabnehmer",
 		["br185_menu_fake"] = "Traxx AC1 F140 - Fake",
-		["br185_2_menu_fake"] = "Traxx AC1 F140 - 4 Stromabnehmer - Fake",
-		["br185_desc"] = "Die Traxx AC 1 F140 ",
+		["br185_desc"] = "Die Traxx AC 1 F140 xxxxxxxxxxxxxxxxxxxxx",
 
-		["br185_ch"] = 	"BR 185 mit 4 Stromabnehmern für Schweiz, Frankreich oder Luxemburg",
-		["br185"] = 	"BR 185 mit 2 Stromabnehmern",
+		["br185_2_menu"] = "Traxx AC1 F140 - 4 Panto",
+		["br185_2_menu_fake"] = "Traxx AC1 F140 - 4 Panto - Fake",
+
+		["br185_2_menu_ch"] = "Traxx AC1 F140 - Panto CH, F, L",
+
+
+		["br185_ch"] = 	"BR 185 mit 4 Panto für Schweiz, Frankreich oder Luxemburg",
+		["br185"] = 	"BR 185 mit 2 Panto",
 
 		["pz_traxx1"] = "Traxx 1 für Personenverkehr",
 		["option_pz_traxx1_desc"] = "Sollen die Traxx 1 für den Personenverkehr aktiviert werden?",
@@ -81,8 +85,8 @@ return {
 		["ch_traxx1"] = "Traxx 1 mit 4 Stromabnhemer für Schweiz, Frankreich oder Luxemburg",
 		["option_ch_traxx1_desc"] = "Sollen die Traxx 1 mit 4 Stromabnhemer für das Schweiz, Frankreich oder Luxemburg System aktiviert werden?",
 		
-		["sa_traxx1"] = "Traxx 1 mit gehobenen Stromabnehmer für Schweiz, Frankreich oder Luxemburg",
-		["option_sa_traxx1_desc"] = "Sollen die Traxx 1 mit gehobenen Stromabnehmer für das Schweiz, Frankreich oder Luxemburg System aktiviert werden?",
+		["sa_traxx1"] = "Traxx 1 mit gehobenem Pantom für Schweiz, Frankreich oder Luxemburg",
+		["option_sa_traxx1_desc"] = "Sollen die Traxx 1 mit gehobenem Panto für das Schweiz, Frankreich oder Luxemburg System aktiviert werden?",
 		
 		["db_traxx1"] = "Traxx 1 der DB aktivieren?",
 		["option_db_traxx1_desc"] = "Sollen die Traxx 1 für die DB aktiviert werden?",
@@ -146,11 +150,17 @@ return {
 		
 		["br185_r4c_name"] = 	"BR 185 550 Rail 4 Chem (2005)",
 		["br185_r4c2_name"] = 	"BR 185-CL 006 Rail 4 Chem (2002)",
-		
-		
+				
 		 -- Vorspann
         ["Vorspann_traxx1"] = "Vorspann-Loks aktivieren?",
         ["option_vorspann_traxx1_desc"] = "Sollen die Vorspann-Loks (mit vorderem Panto gehoben) aktiviert werden?",
+		
+		
+		["br146_menu_vorspann"] = "Traxx AC1 P160 - Vorspann",
+		
+		["br185_menu_vorspann"] = "Traxx AC1 F140 - Vorspann",
+		["br185_2_menu_vorspann"] = "Traxx AC1 F140 - 4 Panto - Vorspann",
+		["br185_2_menu_ch_vorspann"] = "Traxx AC1 F140 - Panto CH, F, L - Vorspann",
 		
 		--- BR 146 ---
 		["br146_db_name_vorspann"] = 	"Vorspann - BR 146 104 DB AG (2003)",
@@ -203,6 +213,13 @@ return {
         -- Fake
         ["Fake_traxx1"] = "Fake-Loks aktivieren?",
         ["option_fake_traxx1_desc"] = "Sollen die Fake-Loks (Pantos unten, kein Licht, kein Fahrer) aktiviert werden?",
+				
+		["br146_menu_fake"] = "Traxx AC1 P160 - Fake",
+				
+		["br185_menu_fake"] = "Traxx AC1 F140 - Fake",
+		["br185_2_menu_fake"] = "Traxx AC1 F140 - 4 Panto - Fake",
+		["br185_2_menu_ch_fake"] = "Traxx AC1 F140 - Panto CH, F, L - Fake",
+				
 				
 		--- BR 146 ---
 		["br146_db_name_fake"] = 	"Fake - BR 146 104 DB AG (2003)",
