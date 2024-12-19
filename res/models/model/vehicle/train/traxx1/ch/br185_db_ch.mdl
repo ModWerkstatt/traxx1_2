@@ -613,7 +613,7 @@ return {
 			priceScale = 1,
 		},
 		description = {
-			name = _("br185_db_name_ch"),
+			name = _("br185_db_name"),
 			description = _("br185_desc") .. _("br185_ch"),
 		},
 		emission = {
