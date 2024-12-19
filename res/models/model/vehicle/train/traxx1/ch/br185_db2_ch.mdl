@@ -179,7 +179,7 @@ return {
 					},
 					{
 						materials = { "vehicle/train/emissive/train_all_lights.mtl", },
-						mesh = "vehicle/train/traxx1/licht_rot_lod0.msh",
+						mesh = "vehicle/train/traxx1/licht_rot_ch_lod0.msh",
 						name = "panto_up_ch",
 						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
 					},
@@ -191,7 +191,7 @@ return {
 					},
 					{
 						materials = { "vehicle/train/emissive/train_all_lights.mtl", },
-						mesh = "vehicle/train/traxx1/licht_rot_lod0.msh",
+						mesh = "vehicle/train/traxx1/licht_rot_ch_lod0.msh",
 						name = "panto_up_ch",
 						transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
 					},
@@ -394,7 +394,7 @@ return {
 					},
 					{
 						materials = { "vehicle/train/emissive/train_all_lights.mtl", },
-						mesh = "vehicle/train/traxx1/licht_rot_lod0.msh",
+						mesh = "vehicle/train/traxx1/licht_rot_ch_lod0.msh",
 						name = "panto_up_ch",
 						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
 					},
@@ -406,7 +406,7 @@ return {
 					},
 					{
 						materials = { "vehicle/train/emissive/train_all_lights.mtl", },
-						mesh = "vehicle/train/traxx1/licht_rot_lod0.msh",
+						mesh = "vehicle/train/traxx1/licht_rot_ch_lod0.msh",
 						name = "panto_up_ch",
 						transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
 					},

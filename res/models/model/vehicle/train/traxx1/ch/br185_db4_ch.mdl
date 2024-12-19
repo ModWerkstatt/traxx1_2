@@ -179,8 +179,8 @@ return {
 					},
 					{
 						materials = { "vehicle/train/traxx1/br185_led_red_lights.mtl", },
-						mesh = "vehicle/train/traxx1/licht_rot_led_lod0.msh",
-						name = "licht_rot_led_hinten",
+						mesh = "vehicle/train/traxx1/licht_rot_led_ch_lod0.msh",
+						name = "licht_rot_led_ch_lod0_hinten",
 						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
 					},
 					{
@@ -191,8 +191,8 @@ return {
 					},
 					{
 						materials = { "vehicle/train/traxx1/br185_led_red_lights.mtl", },
-						mesh = "vehicle/train/traxx1/licht_rot_led_lod0.msh",
-						name = "licht_rot_led_vorne",
+						mesh = "vehicle/train/traxx1/licht_rot_led_ch_lod0.msh",
+						name = "licht_rot_led_ch_lod0_vorne",
 						transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
 					},
 					{
@@ -388,8 +388,8 @@ return {
 					},
 					{
 						materials = { "vehicle/train/traxx1/br185_led_red_lights.mtl", },
-						mesh = "vehicle/train/traxx1/licht_rot_led_lod0.msh",
-						name = "licht_rot_led_hinten",
+						mesh = "vehicle/train/traxx1/licht_rot_led_ch_lod0.msh",
+						name = "licht_rot_led_ch_lod0_hinten",
 						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
 					},
 					{
@@ -400,8 +400,8 @@ return {
 					},
 					{
 						materials = { "vehicle/train/traxx1/br185_led_red_lights.mtl", },
-						mesh = "vehicle/train/traxx1/licht_rot_led_lod0.msh",
-						name = "licht_rot_led_vorne",
+						mesh = "vehicle/train/traxx1/licht_rot_led_ch_lod0.msh",
+						name = "licht_rot_led_ch_lod0_vorne",
 						transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
 					},
 					{
