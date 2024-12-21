@@ -56,7 +56,6 @@ return {
 		["mod_name"] = "Bombardier Traxx 1",
 		["mod_desc"] = "Aufgrund der zunehmenden internationalen Unternehmungen wurde von der DB Cargo eine zweisystemfähige elektrische Güterlokomotive gefordert. Daraufhin entwickelte Bombardier die TRAXX 1 Familie, eine weiterentwicklung der BR 145. Die TRAXX 1 Familie besteht aus der BR 185.0 und der BR 146.1. Die BR 185.0 ist mehrsystem fähig und kann mit zusätzlichen schweizer Pantographen ausgerüstet werden. Die BR 146.1 ist nicht mehrsystem fähig, wurde dafür aber mit Zugzielanzeigen für den Personenverkehr ausgerüstet. Die BR 185.0 ist grundsätzlich in zwei Varianten verfügbar einmal nur mit den deutschen Pantographen und einmal mit zusätzlichen Schweizer Pantographen.",
 		
-
 		["br146_menu"] = "Traxx AC1 P160",
 		["br146_menu_fake"] = "Traxx AC1 P160 - Fake",
 		["br146_desc"] = "Traxx xxxxxx",
