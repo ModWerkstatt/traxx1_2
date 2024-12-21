@@ -233,8 +233,8 @@ return {
 
 		["br185_2_menu_ch"] = "Traxx AC1 F140 - Panto CH, F, L",
 
-		["br185_ch"] = 	"BR 185 mit 4 Panto für Schweiz, Frankreich oder Luxemburg",
-		["br185"] = 	"BR 185 mit 2 Panto",
+		["br185_ch"] = 	" BR 185 mit 4 Panto für Schweiz, Frankreich oder Luxemburg",
+		["br185"] = 	" BR 185 mit 2 Panto",
 
 		["pz_traxx1"] = "Traxx 1 für Personenverkehr",
 		["option_pz_traxx1_desc"] = "Sollen die Traxx 1 für den Personenverkehr aktiviert werden?",
