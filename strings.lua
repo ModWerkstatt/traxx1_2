@@ -71,8 +71,8 @@ return {
 
 		["br185_2_menu_ch"] = "Traxx AC1 F140 - Panto CH, F, L",
 
-		["br185_ch"] = 	"BR 185 mit 4 Panto für Schweiz, Frankreich oder Luxemburg",
 		["br185"] = 	"BR 185 mit 2 Panto",
+		["br185_ch"] = 	"BR 185 mit 4 Panto für Schweiz, Frankreich oder Luxemburg",
 
 		["pz_traxx1"] = "Traxx 1 für Personenverkehr",
 		["option_pz_traxx1_desc"] = "Sollen die Traxx 1 für den Personenverkehr aktiviert werden?",
@@ -266,9 +266,6 @@ return {
 		["br185_r4c_name_fake"] = 		"Fake - BR 185 550 Rail 4 Chem (2005)",
 		["br185_r4c2_name_fake"] = 		"Fake - BR 185-CL 006 Rail 4 Chem (2002)",
 		
-		
-
-
 	},
 }
 end
