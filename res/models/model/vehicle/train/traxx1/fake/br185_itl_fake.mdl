@@ -331,7 +331,7 @@ return {
 			priceScale = 1,
 		},
 		description = {
-			name = _("br185_itl_name"),
+			name = _("br185_itl_name_fake"),
 			description = _("br185_desc") .. _("br185"),
 		},
 		emission = {
