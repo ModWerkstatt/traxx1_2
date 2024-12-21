@@ -4,7 +4,7 @@ return {
 	order = -1,
 	params = {
 		emissive_scale = {
-			emissiveScale = { 70, 70, 20, },
+			emissiveScale = { 180, 200, 255, },
 		},
 		fade_out_range = {
 			fadeOutEndDist = 20000,
