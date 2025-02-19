@@ -1,7 +1,7 @@
 ﻿function data()
 return {
 	info = {
-		minorVersion = 0,
+		minorVersion = 1,
 		severityAdd = "NONE",
 		severityRemove = "WARNING",
 		name = _("mod_name"),
@@ -127,7 +127,7 @@ return {
 			end
 			return data
 		end
-		
+
 		local saFilter = function(fileName, data)
 			if data.metadata.transportVehicle and data.metadata.traxx1 and data.metadata.traxx1.sa == true then
 				data.metadata.availability.yearFrom = 1
@@ -135,7 +135,7 @@ return {
 			end
 			return data
 		end
-		
+
 		local dbFilter = function(fileName, data)
 			if data.metadata.transportVehicle and data.metadata.traxx1 and data.metadata.traxx1.db == true then
 				data.metadata.availability.yearFrom = 1
@@ -143,7 +143,7 @@ return {
 			end
 			return data
 		end
-		
+
 		local sbbFilter = function(fileName, data)
 			if data.metadata.transportVehicle and data.metadata.traxx1 and data.metadata.traxx1.sbb == true then
 				data.metadata.availability.yearFrom = 1
@@ -151,7 +151,7 @@ return {
 			end
 			return data
 		end
-		
+
 		local privatFilter = function(fileName, data)
 			if data.metadata.transportVehicle and data.metadata.traxx1 and data.metadata.traxx1.privat == true then
 				data.metadata.availability.yearFrom = 1
